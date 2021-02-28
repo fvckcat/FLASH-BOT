@@ -11,8 +11,8 @@
   </a>
 </p>  
 
-# Lord Userbot
-![Lord Userbot Logo](https://telegra.ph/file/b0cc1cdc0107e5b38b24d.jpg)
+# Bee Userbot
+![Bee Userbot Logo](https://telegra.ph/file/b0cc1cdc0107e5b38b24d.jpg)
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>

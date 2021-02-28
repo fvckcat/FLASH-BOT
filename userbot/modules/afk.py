@@ -24,10 +24,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**My Bee {ALIVE_NAME} Lagi AFK!**",
-    f"**Maaf Bee {ALIVE_NAME} Sedang AFK\n Tunggu Sampai Dia Kembali Online!**",
-    f"**Bee {ALIVE_NAME} Sedang AFK\n Tunggulah Sampai Online**",
-    f"**Maaf yah Bee {ALIVE_NAME} Masih AFK!**",
+    f"**My Bee {ALIVE_NAME} Lagi OFF!**",
+    f"**Maaf Bee {ALIVE_NAME} LAGI OFF\n Tunggu Sampai Dia Kembali Online!**",
+    f"**Bee {ALIVE_NAME} Lagi Off\n ➥ Tunggu aja, Nanti On Lagi**",
+    f"**Maaf yah Bee {ALIVE_NAME} Masih OFF!**",
 ]
 
 
@@ -98,7 +98,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("**Lord Telah Kembali!**")
+        msg = await notafk.respond("**Bee Udah On lagi**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))

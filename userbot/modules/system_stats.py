@@ -299,10 +299,7 @@ async def amireallyalive(alive):
         f" `{DEFAULTUSER}` \n"
         f"➠ **Username:** \n"
         f" `@{user.username}` \n\n"
-        f"__Bee-Userbot Adalah Userbot Lebah "
-        f"__Yang Dirancang Untuk Mencari Madu__ "
-        f"__Di Dunia Virtual.__ __Versi Bot Yang Dipake__ `{BOT_VER}` "
-        f"__Jumlah Modul Dalam Bee Userbot__ `{len(modules)}` \n\n"
+        f"__Bee-Userbot Dedicate To Desain " \n\n"
         f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:

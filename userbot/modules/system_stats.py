@@ -297,14 +297,11 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n\n"
-        f"➠ **Bee:** \n"
+        f"➠ **Nama Siang:** \n"
         f" `{DEFAULTUSER}` \n"
-        f"➠ **Username:** \n"
+        f"➠ **Nama Malam:** \n"
         f" `@{user.username}` \n\n"
-        f"__Bee-Userbot Didedikasi Khusus Untuk "
-        f"__Untuk Mencari Madu__ "
-        f"__Di Dunia Virtual__ __Bee Versi Yang Dipake `{BOT_VER}` "
-        f"__Jumlah Modul Dalam Bee Userbot__ `{len(modules)}` \n\n"
+        f"**Ordinary Shit Bee - No More Drama** "
         f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:

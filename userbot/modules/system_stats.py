@@ -223,16 +223,16 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **┗┓LORD USERBOT┏┛** \n"
+        f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n"
         f"\n__**{LORD_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━**\n"
-        f"**♛ Lord** \n"
+        f"**𓆤 Bee** \n"
         f" ➥ `{DEFAULTUSER}` \n"
-        f"**♛ Username** \n"
+        f"**𓆤 Username** \n"
         f" ➥ `@{user.username}` \n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
         f"┣[• `Python   :`Ver {python_version()} \n"
-        f"┣[• `Bot Ver  :`{BOT_VER} \n"
+        f"┣[• `Bee Ver  :`{BOT_VER} \n"
         f"┣[• `Modules  :`{len(modules)} \n")
     if ALIVE_LOGO:
         try:
@@ -260,14 +260,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**▬▬▬▬▬▬❙۩♛۩❙▬▬▬▬▬▬**\n"
-        f"     **♕ LORD USERBOT ♕** \n\n"
-        f"❃ **Lord**     \n   ➥ `{DEFAULTUSER}` \n"
+        f"     **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n\n"
+        f"❃ **Bee**     \n   ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username** \n   ➥ `@{user.username}` \n"
         f"❃ **Telethon** \n   ➥ `Versi {version.__version__}` \n"
         f"❃ **Python**   \n   ➥ `Versi {python_version()}` \n"
         f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n"
+        f"❃ **Bee Repo:** [Lord-Userbot](https://github.com/fvckcat/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Punya:** [Toni](t.me/bluuebluesky)\n"
         f"**▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -294,16 +294,16 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **┗┓LORD USERBOT┏┛** \n\n"
-        f"♛ **Lord:** \n"
+        f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n\n"
+        f"➠ **Bee:** \n"
         f" `{DEFAULTUSER}` \n"
-        f"♛ **Username:** \n"
+        f"➠ **Username:** \n"
         f" `@{user.username}` \n\n"
-        f"__Lord-Userbot Adalah Userbot Khusus__ "
-        f"__Yang Digunakan Untuk Bersenang-Senang__ "
-        f"__Di Telegram__ __Versi Bot Yang Digunakan__ `{BOT_VER}` "
-        f"__Jumlah Modul Dalam Lord Userbot__ `{len(modules)}` \n\n"
-        f"❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
+        f"__Bee-Userbot Adalah Userbot Lebah "
+        f"__Yang Dirancang Untuk Mencari Madu__ "
+        f"__Di Dunia Virtual.__ __Versi Bot Yang Dipake__ `{BOT_VER}` "
+        f"__Jumlah Modul Dalam Bee Userbot__ `{len(modules)}` \n\n"
+        f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

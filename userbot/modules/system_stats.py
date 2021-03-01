@@ -224,12 +224,11 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n"
-        f"\n__**{LORD_TEKS_KUSTOM}**__\n"
-        f"**━━━━━━━━━━━━━━━━━━━**\n"
+        f"**{LORD_TEKS_KUSTOM}**\n\n"
         f"**𓆤 Bee** \n"
         f" ➥ `{DEFAULTUSER}` \n"
         f"**𓆤 Username** \n"
-        f" ➥ `@{user.username}` \n"
+        f" ➥ `@{user.username}` \n\n"
         f"┏━━━━━━━━━━━━━━━━━━━\n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
         f"┣[• `Python   :`Ver {python_version()} \n"
@@ -301,7 +300,7 @@ async def amireallyalive(alive):
         f" `{DEFAULTUSER}` \n"
         f"➠ **Nama Malam:** \n"
         f" `@{user.username}` \n\n"
-        f"**Ordinary Shit Bee - No More Drama** "
+        f"**━━━━━━━━━━━━━━━━━━━**\n"
         f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:

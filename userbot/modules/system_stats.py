@@ -230,10 +230,12 @@ async def amireallyalive(alive):
         f" ➥ `{DEFAULTUSER}` \n"
         f"**𓆤 Username** \n"
         f" ➥ `@{user.username}` \n"
+        f"┏━━━━━━━━━━━━━━━━━━━\n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
         f"┣[• `Python   :`Ver {python_version()} \n"
         f"┣[• `Bee Ver  :`{BOT_VER} \n"
-        f"┣[• `Modules  :`{len(modules)} \n")
+        f"┣[• `Modules  :`{len(modules)} \n"
+        f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -299,7 +301,10 @@ async def amireallyalive(alive):
         f" `{DEFAULTUSER}` \n"
         f"➠ **Username:** \n"
         f" `@{user.username}` \n\n"
-        f"__Bee-Userbot Dedicate To Desain " \n\n"
+        f"__Bee-Userbot Didedikasi Khusus Untuk "
+        f"__Untuk Mencari Madu__ "
+        f"__Di Dunia Virtual__ __Bee Versi Yang Dipake `{BOT_VER}` "
+        f"__Jumlah Modul Dalam Bee Userbot__ `{len(modules)}` \n\n"
         f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:

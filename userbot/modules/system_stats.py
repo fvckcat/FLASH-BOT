@@ -295,12 +295,12 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n\n"
-        f"➠ **Nama Siang:** \n"
+        f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n"
+        f"**━━━━━━━━━━━━━━━━━━━**\n\n"
+        f"➠ **Ordinary People :** \n"
         f" `{DEFAULTUSER}` \n"
-        f"➠ **Nama Malam:** \n"
+        f"➠ **No More Drama :** \n"
         f" `@{user.username}` \n\n"
-        f"**━━━━━━━━━━━━━━━━━━━**\n"
         f"[Bee-Userbot](https://github.com/fvckcat/Lord-Userbot) | [Support](t.me/LordUserbot_Group) | [Owner](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:

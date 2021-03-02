@@ -301,7 +301,7 @@ async def amireallyalive(alive):
         f"➠ **Nama Malam:** \n"
         f" `@{user.username}` \n\n"
         f"**━━━━━━━━━━━━━━━━━━━**\n"
-        f"➥ **Bee Repo:** [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n➥ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n➥ **Punya:** [Toni](t.me/bluuebluesky)\n")
+        f"[Bee-Userbot](https://github.com/fvckcat/Lord-Userbot) | [Support](t.me/LordUserbot_Group) | [Owner](t.me/bluuebluesky)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

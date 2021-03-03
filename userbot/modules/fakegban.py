@@ -18,9 +18,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"`Mampus!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 oleh` {DEFAULTUSER}\n"
-    no_reason = "No Reason Given "
-    await event.edit("**My Bee sedang melakukan Gban ☠️**")
+    mentions = f"`Mampus!! User 𝗚𝗯𝗮𝗻𝗻𝗲𝗱 oleh` {DEFAULTUSER}\n"
+    no_reason = "Tidak Ada Alasan "
+    await event.edit("**My Bee sedang melakukan Gban.**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -38,7 +38,7 @@ async def gbun(event):
         else:
             jnl = ("`Warning!!`"
                    "[{}](tg://user?id={})"
-                   f"` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh` {DEFAULTUSER}\n\n"
+                   f"` 𝗚𝗯𝗮𝗻𝗻𝗲𝗱 Oleh` {DEFAULTUSER}\n\n"
                    "**Name: ** __{}__\n"
                    "**ID : ** `{}`\n"
                    ).format(firstname, idd, firstname, idd)
@@ -48,14 +48,14 @@ async def gbun(event):
                 jnl += "**Username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
                 gbunm = "`{}`".format(gbunVar)
-                gbunr = "**Reason: **" + gbunm
+                gbunr = "**Karena: **" + gbunm
                 jnl += gbunr
             else:
                 jnl += no_reason
             await reply_message.reply(jnl)
     else:
         mention = (
-            f"MAmpus!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh {DEFAULTUSER} \nReason: No Reason Given. ")
+            f"Mampus!! User 𝗚𝗯𝗮𝗻𝗻𝗲𝗱 Oleh {DEFAULTUSER} \nKarena: Tidak Ada Alasan ")
         await event.reply(mention)
     await event.delete()
 

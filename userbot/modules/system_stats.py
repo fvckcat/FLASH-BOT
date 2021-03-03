@@ -302,7 +302,7 @@ async def amireallyalive(alive):
         f" ❖ **Python    :** Ver {python_version()} \n"
         f" ❖ **Bee Ver   :** {BOT_VER} \n"
         f" ❖ **Modules  :** {len(modules)} \n\n"
-        f"[BeeBot](https://github.com/fvckcat/Lord-Userbot) | [Channel](t.me/candaanda) | [Insta](https://www.instagram.com/antoniprananda)\n")
+        f"[BeeBot](https://github.com/fvckcat/Lord-Userbot) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

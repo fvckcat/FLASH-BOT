@@ -297,11 +297,12 @@ async def amireallyalive(alive):
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 | TONI -** \n"
         f"**━━━━━━━━━━━━━━━━━**\n\n"
-        f"➠ **Ordinary People :** \n"
-        f" `{DEFAULTUSER}` \n"
-        f"➠ **No More Drama :** \n"
-        f" `@{user.username}` \n\n"
-        f"[BeeBot](https://github.com/fvckcat/Lord-Userbot) | [Support](t.me/LordUserbot_Group) | [Owner](t.me/bluuebluesky)\n")
+        f" ❖**Owner    :** [Toni](t.me/bluuebluesky)\n"
+        f" ❖**Telethon :** Ver {version.__version__} \n"
+        f" ❖**Python   :** Ver {python_version()} \n"
+        f" ❖**Bee Ver  :** {BOT_VER} \n"
+        f" ❖**Modules  :** {len(modules)} \n\n"
+        f"[BeeBot](https://github.com/fvckcat/Lord-Userbot) | [Support](t.me/LordUserbot_Group) | [Insta](https://www.instagram.com/antoniprananda)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

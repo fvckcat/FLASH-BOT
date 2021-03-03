@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} ❖".format("❖", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} ✪".format("✪", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -365,10 +365,10 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⟽", data="{}_prev({})".format(prefix, modulo_page)
+                    "❮❮❮❮❮", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⟾", data="{}_next({})".format(prefix, modulo_page)
+                    "❯❯❯❯❯", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**❃ Jumlah Modul Yang Tersedia:** `{}`\n               \n**❃ Daftar Modul Bee Userbot:** \n".format(
-                        "**𓆤 Bee-Userbot**",
+                    text="{}\n\n★ 𝙅𝙪𝙢𝙡𝙖𝙝 𝙈𝙤𝙙𝙪𝙡: `{}`\n               \n★ 𝘿𝙖𝙛𝙩𝙖𝙧 𝙈𝙤𝙙𝙪𝙡 𝘽𝙚𝙚𝘽𝙤𝙩 : \n".format(
+                        "★ 𝘽𝙚𝙚𝘽𝙤𝙩 :",
                         len(dugmeler),
                     ),
                     buttons=buttons,

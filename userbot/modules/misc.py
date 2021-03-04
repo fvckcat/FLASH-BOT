@@ -70,18 +70,18 @@ async def killdabot(event):
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Lord-Userbot Telah Dimatikan`")
+                                        "`Bee-Userbot Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Lord-Userbot...`")
+    await event.edit("`Restarting Bee-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Lord-Userbot Telah Di Restart`")
+                                        "`Bee-Userbot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,12 +93,12 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[Lord-Userbot Repo](https://github.com/Zora24/Lord-Userbot/blob/Lord-Userbot/README.md)"
+        "\n[Bee-Userbot Repo](https://github.com/fvckcat/Lord-Userbot/blob/Lord-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
-        "\n[Video Tutorial - 576p](https://mega.nz/#!ErwCESbJ!1ZvYAKdTEfb6y1FnqqiLhHH9vZg4UB2QZNYL9fbQ9vs)"
-        "\n[Video Tutorial - 1080p](https://mega.nz/#!x3JVhYwR!u7Uj0nvD8_CyyARrdKrFqlZEBFTnSVEiqts36HBMr-o)"
+        "\n[Channel Quotes](t.me/candaanda)"
+        "\n[Instagram Toni](https://www.instagram.com/antoniprananda)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)"
+        "❖ 𝗥𝗲𝗽𝗼 𝗕𝗲𝗲𝗕𝗼𝘁: [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n❖ 𝗣𝗲𝗺𝗶𝗹𝗶𝗸: [Toni](t.me/bluuebluesky)"
     )
 
 
@@ -159,7 +159,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Harap Balas Di Gambar Lord`")
+        await img.edit("`Harap Balas Di Gambar Bee`")
         return
 
     if photo:

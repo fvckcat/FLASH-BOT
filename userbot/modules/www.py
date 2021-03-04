@@ -120,17 +120,18 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Hasil Tes:\n**"
-                   "✘ **Dimulai Pada:** "
+                   "❖ **Dimulai Pada:** "
                    f"`{result['timestamp']}` \n"
-                   "✘ **Download:** "
+                   f" **━━━━━━━━━━━━━━━━━**\n\n"
+                   "❖ **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "✘ **Upload:** "
+                   "❖ **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "✘ **Ping:** "
+                   "❖ **Ping:** "
                    f"`{result['ping']}` \n"
-                   "✘ **ISP:** "
+                   "❖ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "✦҈͜͡➳ **BOT:** `Lord Userbot`")
+                   "❖ **BOT:** `Bee Userbot`")
 
 
 def speed_convert(size):
@@ -153,7 +154,7 @@ async def pingme(pong):
     await pong.edit("`Pong.....🐝`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit("✘ **Ping!**\n`%sms`" % (duration))
+    await pong.edit("❖ **Ping!**\n`%sms`" % (duration))
 
 CMD_HELP.update(
     {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\

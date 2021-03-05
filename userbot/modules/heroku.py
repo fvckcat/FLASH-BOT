@@ -129,7 +129,7 @@ async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("`Mendapatkan Informasi Dyno Heroku Anda ヅ`")
+    await dyno.edit("𝗠𝗮𝘂 𝗡𝘂𝗻𝗷𝘂𝗸𝗶𝗻 𝗦𝗶𝘀𝗮 𝗗𝗶𝗻𝗼 𝗦𝗲𝗿𝗶𝗯𝘂 𝗷𝗮𝗺 𝗱𝘂𝗹𝘂.")
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
         'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -150,7 +150,7 @@ async def dyno_usage(dyno):
                     f"`{r.reason}`",
                     reply_to=dyno.id
                 )
-                await dyno.edit("`Tidak Bisa Mendapatkan Informasi Dyno ヅ`")
+                await dyno.edit("𝗞𝗲𝗯𝗮𝗻𝘆𝗮𝗸𝗮𝗻 𝗗𝘆𝗻𝗼, 𝗖𝗼𝗯𝗮 𝗟𝗮𝗴𝗶 𝗡𝗮𝗻𝘁𝗶.")
                 return False
             result = await r.json()
             quota = result['account_quota']
@@ -179,13 +179,13 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "**☛ Informasi Dyno**:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
-                f"✥ `Penggunaan Dyno` **{app.name}**:\n"
-                f"  ❉ **{AppHours} Jam - "
+                "➢ 𝗦𝗲𝗿𝗶𝗯𝘂 𝗝𝗮𝗺 𝗕𝗶𝗮𝘀𝗮 𝗔𝗷𝗮 !:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
+                f"➠ `Pemakaian Dyno` **{app.name}**:\n"
+                f"  ➥ **{AppHours} Jam - "
                 f"{AppMinutes} Menit  -  {AppPercentage}%**"
-                "\n ✲━─━─━─━─━─━─━─━─━─━✲\n"
-                "✥ `Sisa Dyno Bulan Ini`:\n"
-                f"  ❉ **{hours} Jam - {minutes} Menit  "
+                "\n ❖━─━─━─━─━─━─━─━─━─━❖\n"
+                "➠ `Sisa Dyno Bulan Ini`:\n"
+                f"  ➥ **{hours} Jam - {minutes} Menit  "
                 f"-  {percentage}%**\n"
                 "╰━┷━━━━━━━━━━━━━━━━┷━╯"
             )
@@ -203,7 +203,7 @@ async def _(dyno):
         return await dyno.reply(
             "`Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var.`"
         )
-    await dyno.edit("`Sedang Mengambil Logs Lord ヅ`")
+    await dyno.edit("`Sedang Mengambil Logs Bee`")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
     fd = codecs.open("logs.txt", "r", encoding="utf-8")
@@ -211,7 +211,7 @@ async def _(dyno):
     key = (requests.post("https://nekobin.com/api/documents",
                          json={"content": data}) .json() .get("result") .get("key"))
     url = f"https://nekobin.com/raw/{key}"
-    await dyno.edit(f"`Ini Logs Heroku Anda Lord:`\n\nPaste Ke: [Nekobin]({url})")
+    await dyno.edit(f"`Ini Logs Heroku Anda Bee:`\n\nPaste Ke: [Nekobin]({url})")
     return os.remove("logs.txt")
 
 
@@ -219,7 +219,7 @@ CMD_HELP.update({"heroku": ">.`usage`"
                  "\nUsage: Check Dyno Heroku"
                  "\n\n>`.set var <NEW VAR> <VALUE>`"
                  "\nUsage: Tambahkan Variabel Baru Atau Memperbarui Variabel"
-                 "\nSetelah Menyetel Variabel Lord-Userbot Akan Di Restart."
+                 "\nSetelah Menyetel Variabel Bee-Userbot Akan Di Restart."
                  "\n\n>`.get var or .get var <VAR>`"
                  "\nUsage: Dapatkan Variabel Yang Ada, Gunakan Hanya Di Grup Privasi Anda!"
                  "\nIni Mengembalikan Semua Informasi Pribadi Anda, Harap berhati-hati."

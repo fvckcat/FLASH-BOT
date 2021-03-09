@@ -188,11 +188,11 @@ async def dyno_usage(dyno):
                 "- 𝐒 𝐈 𝐒 𝐀   𝐊 𝐔 𝐎 𝐓 𝐀 -\n━━━━━━━━━━━━━━━━━\n"
                 f"• Pemakaian Kuota :\n"
                 f"  ➥ `{AppHours} Jam - "
-                f"{AppMinutes} Menit  -  {AppPercentage}%`"
+                f"{AppMinutes} Menit - {AppPercentage}%`"
                 "\n\n"
                 "• Sisa Kuota Bulan Ini :\n"
-                f"  ➥ `{hours} Jam - {minutes} Menit  "
-                f"-  {percentage}%`\n"
+                f"  ➥ `{hours} Jam - {minutes} Menit "
+                f"- {percentage}%`\n"
             )
             await asyncio.sleep(20)
             await event.delete()

@@ -52,10 +52,10 @@ async def pingme(pong):
     await pong.edit("**♠♠♠♠ Everyday ♠♠♠♠**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f" - 𝗕𝗲𝗲𝗦𝗽𝗲𝗲𝗱 "
-                    f"\n  ➥ %sms \n"
-                    f"- 𝗬𝗲𝗹𝗹𝗼𝘄 "
-                    f"\n  ➥ {ALIVE_NAME} \n" % (duration))
+    await pong.edit(f" • 𝐒𝐈𝐍𝐘𝐀𝐋 "
+                    f"\n  ➢ `%sms` \n"
+                    f" • 𝐎𝐖𝐍𝐄𝐑 "
+                    f"\n  ➢ `{ALIVE_NAME}` \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -130,7 +130,7 @@ async def speedtst(spd):
     await spd.edit("**Hasil Tes:\n**"
                    "❖ **Dimulai Pada:** "
                    f"`{result['timestamp']}` \n"
-                   f" **━━━━━━━━━━━━━━━━━**\n\n"
+                   f" **━━━━━━━━━━━━━━━━━**\n"
                    "❖ **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
                    "❖ **Upload:** "

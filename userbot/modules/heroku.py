@@ -129,7 +129,13 @@ async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("𝗠𝗮𝘂 𝗡𝘂𝗻𝗷𝘂𝗸𝗶𝗻 𝗦𝗶𝘀𝗮 𝗗𝗶𝗻𝗼 𝗦𝗲𝗿𝗶𝗯𝘂 𝗷𝗮𝗺 𝗱𝘂𝗹𝘂.")
+    await dyno.edit("`Mengecek Sisa Kuota...`")
+    await dyno.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await dyno.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await dyno.edit("**40% ████▒▒▒▒▒▒**")
+    await dyno.edit("**60% ██████▒▒▒▒**")
+    await dyno.edit("**80% ████████▒▒**")
+    await dyno.edit("**100% ██████████**")
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
         'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -179,15 +185,14 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "➢ 𝗦𝗲𝗿𝗶𝗯𝘂 𝗝𝗮𝗺 𝗕𝗶𝗮𝘀𝗮 𝗔𝗷𝗮 !:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
-                f"➠ `Pemakaian Dyno` **{app.name}**:\n"
-                f"  ➥ **{AppHours} Jam - "
-                f"{AppMinutes} Menit  -  {AppPercentage}%**"
-                "\n ❖━─━─━─━─━─━─━─━─━─━❖\n"
-                "➠ `Sisa Dyno Bulan Ini`:\n"
-                f"  ➥ **{hours} Jam - {minutes} Menit  "
-                f"-  {percentage}%**\n"
-                "╰━┷━━━━━━━━━━━━━━━━┷━╯"
+                "- 𝐒 𝐈 𝐒 𝐀   𝐊 𝐔 𝐎 𝐓 𝐀 -\n━━━━━━━━━━━━━━━━━\n"
+                f"• Pemakaian Kuota :\n"
+                f"  ➥ `{AppHours} Jam - "
+                f"{AppMinutes} Menit  -  {AppPercentage}%`"
+                "\n\n"
+                "• Sisa Kuota Bulan Ini :\n"
+                f"  ➥ `{hours} Jam - {minutes} Menit  "
+                f"-  {percentage}%`\n"
             )
             await asyncio.sleep(20)
             await event.delete()

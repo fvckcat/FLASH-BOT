@@ -95,7 +95,7 @@ async def pingme(pong):
     start = datetime.now()
     animation_interval = 0.2
     animation_ttl = range(0, 26)
-    await edit_or_reply(event, "ping....")
+    await event.edit("`Ping..............`")
     animation_chars = [
     "⬛️⬛️⬛️⬛️⬛️",
     "⬛️⬛️⬛️⬛️⬛️ \n⬛️🟨⬛️⬛️⬛️",

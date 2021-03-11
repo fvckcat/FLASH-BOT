@@ -24,10 +24,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**Maaf Kawan, {ALIVE_NAME} Off Dulu.**",
-    f"**Maaf Kawan, {ALIVE_NAME} Off Dulu\n Tunggu Aja Nanti Online Lagi!**",
-    f"**Ehh Si {ALIVE_NAME} Lagi Off\n ➥ Sabar yah, Off dulu**",
-    f"**Maaf yah Kawan, {ALIVE_NAME} Masih OFF.**",
+    f"ᴍᴀᴀꜰ ᴋᴀᴡᴀɴ, {ALIVE_NAME} ᴏꜰꜰ ᴅᴜʟᴜ.",
+    f"ᴍᴀᴀꜰ ᴋᴀᴡᴀɴ, {ALIVE_NAME} ᴏꜰꜰ ᴅᴜʟᴜ.\n ᴛᴜɴɢɢᴜ ᴀᴊᴀ ɴᴀɴᴛɪ ᴏɴʟɪɴᴇ ʟᴀɢɪ.",
+    f"ᴇʜʜ {ALIVE_NAME} ʟᴀɢɪ ᴏꜰꜰ\n ➥ ꜱᴀʙᴀʀ ʏᴀʜ, ᴏꜰꜰ ᴅᴜʟᴜ.",
+    f"ᴍᴀᴀꜰ ʏᴀʜ ᴋᴀᴡᴀɴ, {ALIVE_NAME} ᴍᴀꜱɪʜ ᴏꜰꜰ.",
 ]
 
 

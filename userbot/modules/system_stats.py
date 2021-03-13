@@ -338,7 +338,7 @@ async def amireallyalive(alive):
         f"             ♨️ Modules  : {len(modules)} \n"
         f"       ╰══════════════╯ \n"
         f"  [𝗕𝗲𝗲𝗕𝗼𝘁](https://github.com/fvckcat/Lord-Userbot) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](t.me/candaanda) | [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://www.instagram.com/antoniprananda)\n"
-        f" ╰══════════════════════════╯")
+        f"╰═══════════════════╯")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

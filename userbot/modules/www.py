@@ -161,7 +161,7 @@ async def pingme(pong):
                     f"   ▰▱▰▱▰▱▰▱▰▱▰▱\n"
                     f"**        • ꜱɪɴʏᴀʟ  :** "
                     f"`%sms` \n"
-                    f"**        • ᴏᴡɴᴇʀ  :** `{ALIVE_NAME}`" % (duration))
+                    f"**        • ᴏᴡɴᴇʀ  :** `{ALIVE_NAME}`" % (duration)
                     f"╰━━━━━━━━━━━━━━━━━╯")
 
 

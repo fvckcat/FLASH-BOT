@@ -159,7 +159,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**Lord-Userbot Versi:** \n "
+            "**☛**Bee-Userbot Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -303,6 +303,42 @@ async def amireallyalive(alive):
         f" ❖ **Bee Ver   :** {BOT_VER} \n"
         f" ❖ **Modules  :** {len(modules)} \n\n"
         f"[BeeBot](https://github.com/fvckcat/Lord-Userbot) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(500)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`Logo Yang Disediakan Tidak Valid."
+                "\nPastikan Tautan Yang Anda Gunakan Valid`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+
+@register(outgoing=True, pattern=r"^\.(?:lebah|on)\s?(.)?")
+async def amireallyalive(alive):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    output = (
+        f" ╭━━━━━━━━━━━━━━━━━━━━━━━━━╮ \n"
+        f"                **𝗕𝗘𝗘𝗕𝗢𝗧 - 𝗟𝗢𝗥𝗗𝗕𝗢𝗧**\n"
+        f"           ╭▰▱▰▱▰▱▰▱▰▱▰▱╮ \n"
+        f"                  👑 Owner     : [Toni](t.me/bluuebluesky)\n"
+        f"                  ♻️ Telethon : Ver {version.__version__} \n"
+        f"                  💠 Python    : Ver {python_version()} \n"
+        f"                  🔗 Bot Ver   : {BOT_VER} \n"
+        f"                  ♨️ Modules  : len(modules)} \n"
+        f"           ╰▰▱▰▱▰▱▰▱▰▱▰▱╯ \n"
+        f"          [𝗕𝗲𝗲𝗕𝗼𝘁](https://github.com/fvckcat/Lord-Userbot) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](t.me/candaanda) | [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://www.instagram.com/antoniprananda)\n"
+        f"╰━━━━━━━━━━━━━━━━━━━━━━━━━╯ \n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

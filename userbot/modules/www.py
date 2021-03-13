@@ -162,7 +162,7 @@ async def pingme(pong):
                     f"**        • ꜱɪɴʏᴀʟ  :** "
                     f"`%sms` \n"
                     f"**        • ᴏᴡɴᴇʀ  :** `{ALIVE_NAME}`" % (duration)
-                    f"╰━━━━━━━━━━━━━━━━━╯")
+                    f"╰━━━━━━━━━━━━━━━━━╯"))
 
 
 @register(outgoing=True, pattern="^.speed$")

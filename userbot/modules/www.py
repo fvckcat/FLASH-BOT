@@ -142,6 +142,28 @@ async def pingme(pong):
                     f"`{uptime}` \n"
                     f"**• ᴏᴡɴᴇʀ  :** `{ALIVE_NAME}`" % (duration))
 
+@register(outgoing=True, pattern="^.sinyal$")
+async def pingme(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("`Mengecek Sinyal...`")
+    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await pong.edit("**40% ████▒▒▒▒▒▒**")
+    await pong.edit("**60% ██████▒▒▒▒**")
+    await pong.edit("**80% ████████▒▒**")
+    await pong.edit("**100% ██████████**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"╭━━━━━━━━━━━━━━━━━╮\n"
+                    f"          - 𝐉 𝐀 𝐑 𝐈 𝐍 𝐆 𝐀 𝐍 -\n"
+                    f"   ▰▱▰▱▰▱▰▱▰▱▰▱\n"
+                    f"**        • ꜱɪɴʏᴀʟ  :** "
+                    f"`%sms` \n"
+                    f"**        • ᴏᴡɴᴇʀ  :** `{ALIVE_NAME}`" % (duration))
+                    f"╰━━━━━━━━━━━━━━━━━╯")
+
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):

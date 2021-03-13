@@ -328,17 +328,17 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" ╭━━━━━━━━━━━━━━━━━━━━━━━━━╮ \n"
+        f" ╭══════════════════════════╮ \n"
         f"                **𝗕𝗘𝗘𝗕𝗢𝗧 - 𝗟𝗢𝗥𝗗𝗕𝗢𝗧**\n"
-        f"           ╭▰▱▰▱▰▱▰▱▰▱▰▱╮ \n"
+        f"           ╭═════════════════╮ \n"
         f"                  👑 Owner     : [Toni](t.me/bluuebluesky)\n"
         f"                  ♻️ Telethon : Ver {version.__version__} \n"
         f"                  💠 Python    : Ver {python_version()} \n"
         f"                  🔗 Bot Ver   : {BOT_VER} \n"
         f"                  ♨️ Modules  : {len(modules)} \n"
-        f"           ╰▰▱▰▱▰▱▰▱▰▱▰▱╯ \n"
+        f"           ╰═════════════════╯ \n"
         f"          [𝗕𝗲𝗲𝗕𝗼𝘁](https://github.com/fvckcat/Lord-Userbot) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](t.me/candaanda) | [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://www.instagram.com/antoniprananda)\n"
-        f" ╰━━━━━━━━━━━━━━━━━━━━━━━━━╯")
+        f" ╰══════════════════════════╯")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

@@ -11,13 +11,13 @@
   </a>
 </p>  
 
-# Bee Userbot
-![Bee Userbot Logo](https://telegra.ph/file/b0cc1cdc0107e5b38b24d.jpg)
+# Flash Userbot
+![Flash Userbot Logo](https://telegra.ph/file/b0cc1cdc0107e5b38b24d.jpg)
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
-### Repo Bee Userbot
+### Repo Flash Userbot
 Repo Yang Dibuat [TONI](https://t.me/BluueBlueSky) Dari Berbagai Repo Userbot Github 
 
 
@@ -40,8 +40,8 @@ Caranya Pergi Ke Grup Support Bee-Userbot Lalu Ketik #String [TEKAN DISINI](http
 
   > Terakhir Hidupkan Dyno Lalu Check Logs (settings -> view logs) Jika Berhasil Enjoy :)
 ```
-Atau Bisa Gabung Ke Grup Bee Userbot -> [TEKAN DISINI](https://t.me/LordUserbot_Group)
-## <p align="center">DEPLOY BEE-USERBOT</p>
+Atau Bisa Gabung Ke Grup Flash Userbot -> [TEKAN DISINI](https://t.me/LordUserbot_Group)
+## <p align="center">DEPLOY FLASH-USERBOT</p>
 
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Zora24/Lord-Userbot/tree/Lord-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>

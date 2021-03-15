@@ -10,14 +10,14 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("sir this is not a image message reply to image message")
+        await event.edit("**Maaf, Ini Bukan Foto**")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("sir, This is not a image ")
+        await event.edit("**Maaf, Ini Bukan Foto**")
         return
     chat = "@buildstickerbot"
-    await event.edit("Membuat Sticker..")
+    await event.edit("**Bikin Stiker...**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -43,14 +43,14 @@ async def _(event):
     if event.fwd_from:
         return
     if not event.reply_to_msg_id:
-        await event.edit("`Mohon Reply Ke Sticker Bee`")
+        await event.edit("**Maaf, Ini Bukan Sticker**")
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("`Mohon Balas Ke Sticker Bee`")
+        await event.edit("**Maaf, Ini Bukan Sticker**")
         return
     chat = "@stickers_to_image_bot"
-    await event.edit("`Mengubah Menjadi Gambar....`")
+    await event.edit("**Bentar, Jadiin Foto Dulu....**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -87,7 +87,7 @@ async def _(event):
 @register(outgoing=True, pattern="^.stoi$")
 async def sticker_to_png(sticker):
     if not sticker.is_reply:
-        await sticker.edit("`NULL information to feftch...`")
+        await sticker.edit("**Maaf, Ini Bukan Sticker**")
         return False
 
     img = await sticker.get_reply_message()

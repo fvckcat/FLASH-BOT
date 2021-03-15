@@ -292,7 +292,7 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
+    await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 | TONI -** \n"
@@ -325,7 +325,7 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:lebah|on)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
+    await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"╭═══════════════════╮\n"

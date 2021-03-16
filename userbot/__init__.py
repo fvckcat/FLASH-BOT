@@ -251,7 +251,7 @@ REDIS = StrictRedis(host='localhost', port=6379, db=0)
 
 
 def is_redis_alive():
-    try: 
+    try:
         REDIS.ping()
         return True
     except BaseException:

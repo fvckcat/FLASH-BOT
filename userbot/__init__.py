@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Zora24/Lord-Userbot.git")
+    "https://github.com/fvckcat/FLASH-BOT.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Lord-Userbot")
+    "UPSTREAM_REPO_BRANCH", "FLASH-BOT")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -167,7 +167,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Lord-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "FLASH-BOT")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "4.0")
@@ -251,7 +251,7 @@ REDIS = StrictRedis(host='localhost', port=6379, db=0)
 
 
 def is_redis_alive():
-    try:
+    try: 
         REDIS.ping()
         return True
     except BaseException:
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "𝘽𝙚𝙚-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙏𝙚𝙡𝙖𝙝 𝘼𝙠𝙩𝙞𝙛")
+    await bot.send_message(BOTLOG_CHATID, "FLASH-BOT AKTIF")
     return
 
 with bot:
@@ -418,13 +418,13 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**Bee✗Userbot**",
-                    text="""**Anda Bisa Membuat Bee Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/Lorduserbot_Group)""",
+                    "**FLASH-BOT**",
+                    text="""**Anda Bisa Membuat FLASH-BOT Anda Sendiri Dengan Cara:** [Tekan Disini](t.me/Lorduserbot_Group)""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "Repo Bee-Userbot",
-                                "https://github.com/fvckcat/Lord-Userbot"),
+                                "Repo FLASH-BOT",
+                                "https://github.com/fvckcat/FLASH-BOT"),
                             custom.Button.url(
                                 "Pemilik Repo",
                                 "t.me/bluuebluesky")],
@@ -447,7 +447,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Harap Deploy Bee Userbot Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME} ツ"
+                reply_pop_up_alert = f"Harap Deploy FLASH-BOT Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -465,7 +465,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Harap Deploy Bee Userbot Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME} ツ"
+                reply_pop_up_alert = f"Harap Deploy FLASH-BOT Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -496,7 +496,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Harap Deploy Bee Userbot Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME} ツ"
+                reply_pop_up_alert = f"Harap Deploy FLASH-BOT Anda Sendiri, Jangan Menggunakan Milik {ALIVE_NAME} ツ"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 

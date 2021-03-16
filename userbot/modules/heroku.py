@@ -107,7 +107,7 @@ async def set_var(var):
                 "**Mengganti Config Vars**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Sedang Proses, Mohon Menunggu Dalam Beberapa Detik ヅ`")
+        await var.edit("`Sedang Proses, Mohon Menunggu Dalam Beberapa Detik`")
     else:
         if BOTLOG:
             await var.client.send_message(
@@ -185,14 +185,15 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                "- 𝐒 𝐈 𝐒 𝐀   𝐊 𝐔 𝐎 𝐓 𝐀 -\n━━━━━━━━━━━━━━━━━\n"
-                f"• Pemakaian Kuota :\n"
+                "⚡️ 𝙁𝙇𝘼𝙎𝙃 𝙆𝙐𝙊𝙏𝘼\n╭ ━━━━━━━━━━━━━━━━━ ╮\n"
+                f"**      Kuota Terpakai :**\n"
                 f"  ➥ `{AppHours} Jam - "
                 f"{AppMinutes} Menit - {AppPercentage}%`"
                 "\n\n"
-                "• Sisa Kuota Bulan Ini :\n"
+                "**      Kuota Tersisa :**\n"
                 f"  ➥ `{hours} Jam - {minutes} Menit "
                 f"- {percentage}%`\n"
+                "╰ ━━━━━━━━━━━━━━━━━ ╯"
             )
             await asyncio.sleep(20)
             await event.delete()

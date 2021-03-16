@@ -158,6 +158,27 @@ async def pingme(pong):
                     f"**       • ᴏᴡɴᴇʀ  :  **`{ALIVE_NAME}`" % (duration))
 
 
+
+
+
+@register(outgoing=True, pattern="^.fping$")
+async def pingme(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await pong.edit("**40% ████▒▒▒▒▒▒**")
+    await pong.edit("**60% ██████▒▒▒▒**")
+    await pong.edit("**80% ████████▒▒**")
+    await pong.edit("**100% ██████████**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃\n"
+                    f"➥ `%sms` \n"
+                    f"➥ `{uptime}`" % (duration))
+
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """

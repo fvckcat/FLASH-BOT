@@ -1,3 +1,5 @@
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5501763.gif" width="473" height="82" alt="FLASH-BOT" /></a>
+
 
 <p align="center">
   <a href="https://github.com/fvckcat/FLASH-BOT/fork">
@@ -9,19 +11,19 @@
   </a>
 </p>  
 
-# Flash Userbot
-![Flash Userbot Logo](https://telegra.ph/file/44f01c854957001b11ad2.jpg)
+# FLASH-BOT
+![FLASH-BOT](https://telegra.ph/file/44f01c854957001b11ad2.jpg)
 
 <h3 align="center">Userbot Yang Digunakan Untuk Bersenang-Senang Di Telegram</h3>
 <p align="center">&nbsp;</p>
 
-### Repo Flash Userbot
+### Repo FLASH-BOT
 Repo Yang Dibuat [Toni](https://t.me/BluueBlueSky) Dan [Alvin](https://t.me/liualvinas) Dari Berbagai Repo Userbot Github 
 
 
 ### CARA MENDAPATKAN STRING SESSON
 
-Caranya Pergi Ke Grup Support Flash-Userbot Lalu Ketik #String [TEKAN DISINI](https://t.me/LordUserbot_Group) Untuk Masuk Ke Grup Support
+Caranya Pergi Ke Grup Support FLASH-BOT Lalu Ketik #String [TEKAN DISINI](https://t.me/LordUserbot_Group) Untuk Masuk Ke Grup Support
 
 ## Bagaimana Cara Deploy?
 

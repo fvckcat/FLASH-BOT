@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, LORD_TEKS_KUSTOM, CMD_HELP, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, FLASH_TEKS_KUSTOM, CMD_HELP, StartTime, bot
 from userbot.events import register
 
 
@@ -159,7 +159,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**Bee-Userbot Versi:** \n "
+            "**☛**FLASH-BOT Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -218,13 +218,13 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:lord|lordon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:flash|flashdon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n"
-        f"**{LORD_TEKS_KUSTOM}**\n\n"
+        f"**{FLASH_TEKS_KUSTOM}**\n\n"
         f"**𓆤 Bee** \n"
         f" ➥ `{DEFAULTUSER}` \n"
         f"**𓆤 Username** \n"
@@ -268,7 +268,7 @@ async def amireallyalive(alive):
         f"❃ **Python**   \n   ➥ `Versi {python_version()}` \n"
         f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
         f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"❃ **Bee Repo:** [Lord-Userbot](https://github.com/fvckcat/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Punya:** [Toni](t.me/bluuebluesky)\n"
+        f"❃ **Bee Repo:** [Lord-Userbot](https://github.com/fvckcat/FLASH-BOT)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Punya:** [Toni](t.me/bluuebluesky)\n"
         f"**▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -339,7 +339,7 @@ async def amireallyalive(alive):
         f"             🔗 Bot Ver   : {BOT_VER} \n"
         f"             ♨️ Modules  : {len(modules)} \n"
         f"       ╰══════════════╯ \n"
-        f"  [𝗕𝗲𝗲𝗕𝗼𝘁](https://github.com/fvckcat/Lord-Userbot) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](t.me/candaanda) | [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://www.instagram.com/antoniprananda)\n"
+        f"  [𝗕𝗲𝗲𝗕𝗼𝘁](https://github.com/fvckcat/FLASH-BOT) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](t.me/candaanda) | [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://www.instagram.com/antoniprananda)\n"
         f"╰═══════════════════╯")
     if ALIVE_LOGO:
         try:

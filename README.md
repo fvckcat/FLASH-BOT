@@ -1,12 +1,11 @@
 
-
 <p align="center">
-  <a href="https://github.com/Zora24/Lord-Userbot/fork">
-    <img src="https://img.shields.io/github/forks/Zora24/Lord-Userbot?label=Fork&style=social">
+  <a href="https://github.com/fvckcat/FLASH-BOT/fork">
+    <img src="https://img.shields.io/github/forks/fvckcat/FLASH-BOT?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/Zora24/Lord-Userbot">
-    <img src="https://img.shields.io/github/stars/Zora24/Lord-Userbot?style=social">
+  <a href="https://github.com/fvckcat/FLASH-BOT">
+    <img src="https://img.shields.io/github/stars/fvckcat/FLASH-BOT?style=social">
   </a>
 </p>  
 

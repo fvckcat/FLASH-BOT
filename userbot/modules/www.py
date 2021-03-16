@@ -171,18 +171,18 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Hasil Tes:\n**"
-                   "❖ **Dimulai Pada:** "
+                   "⚡ **Mulai Pada:** "
                    f"`{result['timestamp']}` \n"
                    f" **━━━━━━━━━━━━━━━━━**\n"
-                   "❖ **Download:** "
+                   "⚡ **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "❖ **Upload:** "
+                   "⚡ **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "❖ **Ping:** "
+                   "⚡ **Ping:** "
                    f"`{result['ping']}` \n"
-                   "❖ **ISP:** "
+                   "⚡ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "❖ **BOT:** `Bee Userbot`")
+                   "⚡ **BOT:** `FLASH-BOT`")
 
 
 def speed_convert(size):
@@ -202,10 +202,10 @@ def speed_convert(size):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("𝗗𝘂𝗮𝗿!.....🐝")
+    await pong.edit("𝘿𝙪𝙖𝙧𝙧.....⚡")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit("- 𝐒 𝐈 𝐍 𝐘 𝐀 𝐋 -\n`%sms`" % (duration))
+    await pong.edit("⚡ 𝙎𝙄𝙉𝙔𝘼𝙇\n`%sms`" % (duration))
 
 CMD_HELP.update(
     {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\

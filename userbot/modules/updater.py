@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari Bee Userbot.`'
+                ' untuk dapat deploy perubahan terbaru dari ⚡ FLASH-BOT.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Bee Userbot dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy ⚡ FLASH-BOT dyno.`'
             )
             return repo.__del__()
-        await event.edit('`[LEBAH]:'
-                         '\nDyno Bee-Userbot Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+        await event.edit('`[FLASH]:'
+                         '\nDyno ⚡ FLASH-BOT Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Bee-Userbot Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
+            await event.edit("`FLASH-BOT Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`Bee-Userbot Berhasil Di Update`")
+                "`FLASH-BOT Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**✥ Bee-Userbot** `Berhasil Di Update!`')
+    await event.edit('**⚡ FLASH-BOT** `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('**✥ Bee-Userbot** `Di Restart....`')
+    await event.edit('**⚡ FLASH-BOT** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik.`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**Bee-Userbot Telah Di Perbarui ツ**")
+            "**⚡ FLASH-BOT Telah Di Perbarui.**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -144,7 +144,7 @@ async def upstream(event):
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Maaf Bee Pembaruan Tidak Dapat Di Lanjutkan Karna "
+        txt = "`Maaf, Pembaruan Tidak Dapat Di Lanjutkan Karna "
         txt += "Beberapa Masalah Terjadi`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n❖ 𝗕𝗲𝗲-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗦𝘂𝗱𝗮𝗵 𝗩𝗲𝗿𝘀𝗶 𝗧𝗲𝗿𝗯𝗮𝗿𝘂.\n')
+            f'\n⚡ 𝗙𝗟𝗔𝗦𝗛-𝗕𝗢𝗧 𝗨𝗣 𝗧𝗢 𝗗𝗔𝗧𝗘.\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'❖ 𝗣𝗲𝗺𝗯𝗮𝗿𝘂𝗮𝗻 𝗨𝗻𝘁𝘂𝗸 𝗕𝗲𝗲𝗕𝗼𝘁 [{ac_br}]:\n\n❖ 𝗣𝗲𝗺𝗯𝗮𝗿𝘂𝗮𝗻:\n`{changelog}`'
+        changelog_str = f'⚡ 𝗣𝗲𝗺𝗯𝗮𝗿𝘂𝗮𝗻 𝗨𝗻𝘁𝘂𝗸 𝗙𝗟𝗔𝗦𝗛-𝗕𝗢𝗧 [{ac_br}]:\n\n⚡ 𝗣𝗲𝗺𝗯𝗮𝗿𝘂𝗮𝗻:\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -214,12 +214,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`❖ Proses Update Bee-Userbot, Loading....1%`')
-        await event.edit('`❖ Proses Update Bee-Userbot, Loading....20%`')
-        await event.edit('`❖ Proses Update Bee-Userbot, Loading....35%`')
-        await event.edit('`❖ Proses Update Bee-Userbot, Loading....77%`')
-        await event.edit('`❖ Proses Update Bee-Userbot, Updating...90%`')
-        await event.edit('`❖ Proses Update Bee-Userbot, Mohon Menunggu Bee....100%`')
+        await event.edit('⚡ Proses Update FLASH-BOT, Loading....1%')
+        await event.edit('⚡ Proses Update FLASH-BOT, Loading....20%')
+        await event.edit('⚡ Proses Update FLASH-BOT, Loading....35%')
+        await event.edit('⚡ Proses Update FLASH-BOT, Loading....77%')
+        await event.edit('⚡ Proses Update FLASH-BOT, Updating...90%')
+        await event.edit('⚡ Proses Update FLASH-BOT, Mohon Menunggu....100%')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru Bee-Userbot."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru ⚡ FLASH-BOT."
     "\n\n.update now"
-    "\nUsage: Memperbarui Bee-Userbot."
+    "\nUsage: Memperbarui ⚡ FLASH-BOT."
     "\n\n.update deploy"
-    "\nUsage: Memperbarui Bee-Userbot Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui ⚡ FLASH-BOT. Dengan Cara Deploy Ulang."
 })

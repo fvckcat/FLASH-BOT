@@ -298,11 +298,11 @@ async def amireallyalive(alive):
         f"━━━━━━━━━━━━━━━━━━━━━━━━\n"
         f" **            𝗙 𝗟 𝗔 𝗦 𝗛 - 👑 - 𝗟 𝗢 𝗥 𝗗  **\n"
         f"━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"⚡️  𝗢𝘄𝗻𝗲𝗿     : ** [Toni](t.me/bluuebluesky)\n"
-        f"⚡️  𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 : ** Ver {version.__version__} \n"
-        f"⚡️  𝗣𝘆𝘁𝗵𝗼𝗻    : ** Ver {python_version()} \n"
-        f"⚡️  𝗕𝗼𝘁 𝗩𝗲𝗿   : ** {BOT_VER} \n"
-        f"⚡️  𝗠𝗼𝗱𝘂𝗹𝗲𝘀 : ** {len(modules)} \n\n"
+        f"⚡️  𝗢𝘄𝗻𝗲𝗿     :  [Toni](t.me/bluuebluesky)\n"
+        f"⚡️  𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 :  Ver {version.__version__} \n"
+        f"⚡️  𝗣𝘆𝘁𝗵𝗼𝗻    :  Ver {python_version()} \n"
+        f"⚡️  𝗕𝗼𝘁 𝗩𝗲𝗿   :  {BOT_VER} \n"
+        f"⚡️  𝗠𝗼𝗱𝘂𝗹𝗲𝘀 :  {len(modules)} \n\n"
         f"       [FlashBot](https://github.com/fvckcat/FLASH-BOT) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n"
         f"╰━━━━━━━━━━━━━━━━━━━━━━╯")
     if ALIVE_LOGO:

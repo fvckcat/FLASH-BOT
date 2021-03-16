@@ -65,7 +65,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Bee-Userbot....`")
+    await event.edit("`Mematikan ⚡ FLASH-BOT....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -76,12 +76,12 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Bee-Userbot...`")
+    await event.edit("`Restarting ⚡ FLASH-BOT...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Bee-Userbot Telah Di Restart`")
+                                        "⚡ FLASH-BOT Telah Di Restart")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[Bee-Userbot Repo](https://github.com/fvckcat/Lord-Userbot/blob/Lord-Userbot/README.md)"
+        "\n[⚡ FLASH-BOT Repo](https://github.com/fvckcat/FLASH-BOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "❖ 𝗥𝗲𝗽𝗼 𝗕𝗲𝗲𝗕𝗼𝘁: [Bee-Userbot](https://github.com/fvckcat/Lord-Userbot)\n❖ 𝗣𝗲𝗺𝗶𝗹𝗶𝗸: [Toni](t.me/bluuebluesky)"
+        "⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏: [FLASH-BOT](https://github.com/fvckcat/FLASH-BOT)\n⚡ 𝙋𝙀𝙈𝙄𝙇𝙄𝙆: [Toni](t.me/bluuebluesky) & [Alvin](https://t.me/liualvinas)"
     )
 
 
@@ -159,7 +159,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Harap Balas Di Gambar Bee`")
+        await img.edit("`Harap Balas Di Gambar`")
         return
 
     if photo:

@@ -17,7 +17,7 @@
 <p align="center">&nbsp;</p>
 
 ### Repo Flash Userbot
-Repo Yang Dibuat [TONI](https://t.me/BluueBlueSky) Dari Berbagai Repo Userbot Github 
+Repo Yang Dibuat [TONI](https://t.me/BluueBlueSky) Dan [Alvin](https://t.me/liualvinas) Dari Berbagai Repo Userbot Github 
 
 
 ### CARA MENDAPATKAN STRING SESSON

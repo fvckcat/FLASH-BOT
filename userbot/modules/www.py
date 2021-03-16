@@ -158,9 +158,6 @@ async def pingme(pong):
                     f"**       • ᴏᴡɴᴇʀ  :  **`{ALIVE_NAME}`" % (duration))
 
 
-
-
-
 @register(outgoing=True, pattern="^.fping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
@@ -178,6 +175,7 @@ async def pingme(pong):
     await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃\n"
                     f"➥ `%sms` \n"
                     f"➥ `{uptime}`" % (duration))
+
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):

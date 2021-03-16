@@ -303,7 +303,7 @@ async def amireallyalive(alive):
         f"⚡️  𝗣𝘆𝘁𝗵𝗼𝗻    : ** Ver {python_version()} \n"
         f"⚡️  𝗕𝗼𝘁 𝗩𝗲𝗿   : ** {BOT_VER} \n"
         f"⚡️  𝗠𝗼𝗱𝘂𝗹𝗲𝘀 : ** {len(modules)} \n\n"
-        f"       [FlashBot](https://github.com/fvckcat/Lord-Userbot) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n"
+        f"       [FlashBot](https://github.com/fvckcat/FLASH-BOT) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n"
         f"**╰━━━━━━━━━━━━━━━━━━━━━━╯**")
     if ALIVE_LOGO:
         try:

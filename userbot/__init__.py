@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "FLASH-BOT AKTIF")
+    await bot.send_message(BOTLOG_CHATID, "⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏 𝘼𝙆𝙏𝙄𝙁")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} 💠".format("💠", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} ⚡".format("⚡", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n- 𝐌 𝐎 𝐃 𝐔 𝐋 : `{}`\n               \n- 𝐅 𝐔 𝐍 𝐆 𝐒 𝐈 : \n".format(
-                        "- 𝐋 𝐄 𝐁 𝐀 𝐇 - ",
+                    text="{}\n**⚡ 𝙈𝙊𝘿𝙐𝙇 :** `{}`\n**⚡ 𝙁𝙐𝙉𝙂𝙎𝙄 :** \n".format(
+                        "**⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -412,7 +412,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Bee✗Userbot ",
+                    "Bantuan ⚡ FLASH-BOT ",
                     text="Daftar Modul",
                     buttons=[],
                     link_preview=True)

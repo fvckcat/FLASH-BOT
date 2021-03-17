@@ -41,19 +41,33 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(outgoing=True, pattern="^.sping$")
+@register(outgoing=True, pattern="^.fping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁⚡𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇⚡𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼⚡𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎⚡-𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃⚡𝘽𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-⚡𝙊𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-𝘽⚡𝙏...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊⚡...")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏⚡..")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏.⚡.")
+    await pong.edit(" 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏..⚡")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃 \n"
-                    f"➥ __Sinyal  :__"
-                    f" __%sms__ \n"
-                    f"➥ __Owner :__"
-                    f" __{ALIVE_NAME}__ \n" % (duration))
+                    f"━━━━━━━━━━━━━━\n"
+                    f"➥ **Sinyal  :**"
+                    f" %sms \n"
+                    f"➥ **Owner :**"
+                    f" {ALIVE_NAME} \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -204,7 +218,7 @@ async def pingme(pong):
     await pong.edit("⚡ 𝙎𝙄𝙉𝙔𝘼𝙇\n`%sms`" % (duration))
 
 CMD_HELP.update(
-    {"ping": "`.ping` ; `.lping` ; `.xping` ; `.sping`\
+    {"ping": "`.ping` ; `.lping` ; `.xping` ; `.fping`\
     \nUsage: Untuk menunjukkan ping bot.\
     \n\n`.speed`\
     \nUsage: Untuk menunjukkan kecepatan.\

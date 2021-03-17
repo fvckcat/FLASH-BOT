@@ -58,7 +58,7 @@ async def pingme(pong):
     await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃\n"
                     f"➥ __Sinyal :__"
                     f" __%sms__ \n"
-                    f"➥ __Online :__
+                    f"➥ __Online: __
                     f" __{uptime}__ \n" % (duration))
 
 

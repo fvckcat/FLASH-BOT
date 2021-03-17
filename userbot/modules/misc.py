@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏 : __[FLASH-BOT](https://github.com/fvckcat/FLASH-BOT)__\n⚡ 𝙋𝙀𝙈𝙄𝙇𝙄𝙆 : __[Toni](t.me/bluuebluesky) & [Alvin](https://t.me/liualvinas)__"
+        "⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏 : [𝘍𝘓𝘈𝘚𝘏-𝘉𝘖𝘛](https://github.com/fvckcat/FLASH-BOT)\n⚡ 𝙋𝙀𝙈𝙄𝙇𝙄𝙆 : [𝘛𝘖𝘕𝘐](t.me/bluuebluesky) & [𝘈𝘓𝘝𝘐𝘕](https://t.me/liualvinas)"
     )
 
 

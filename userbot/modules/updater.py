@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update Bee Userbot**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Bee Userbot.__')
+        return await event.respond('**Perintah Untuk Update ⚡ FLASH-BOT**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡ FLASH-BOT.__')
 
     if force_update:
         await event.edit(

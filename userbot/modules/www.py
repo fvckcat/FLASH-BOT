@@ -120,7 +120,7 @@ async def pingme(pong):
                     f"➥ **Sinyal  :**"
                     f" %sms \n"
                     f"➥ **Owner :**"
-                    f" {ALIVE_NAME} \n" 
+                    f" {ALIVE_NAME} \n"
                     f"╰┈─────────" % (duration))
 
 

@@ -56,8 +56,10 @@ async def pingme(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃\n"
-                    f"➥ __Sinyal : %sms__ \n"
-                    f"➥ __Online : {uptime}__ \n" % (duration))
+                    f"➥ __Sinyal :__"
+                    f" __%sms__ \n"
+                    f"➥ __Online :__
+                    f" __{uptime}__ \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")

@@ -88,16 +88,42 @@ async def pingme(pong):
 @register(outgoing=True, pattern="^.xping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
-    uptime = await get_readable_time((time.time() - StartTime))
+    await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`Ping..............`")
+    await pong.edit(" ⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙊𝙏...")
+    await pong.edit(" ⚡𝙏...")
+    await pong.edit(" ⚡...")
+    await pong.edit(" ⚡..")
+    await pong.edit(" ⚡.")
+    await pong.edit(" ⚡")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡.")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡..")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡...")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡𝙏...")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡𝙊𝙏...")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡𝘽𝙊𝙏...")
+    await pong.edit(" ⚡⚡⚡⚡⚡⚡-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡⚡⚡⚡⚡𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡⚡⚡⚡𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡⚡⚡𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡⚡𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
+    await pong.edit(" ⚡𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**⌖ Pong!**\n"
-                    f"➠ __Ping:__ "
-                    f"`%sms` \n"
-                    f"➠ __Uptime:__ "
-                    f"`{uptime}` \n" % (duration))
+    await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃 \n"
+                    f"━━━━━━━━━━━━━━\n"
+                    f"➥ **Sinyal  :**"
+                    f" %sms \n"
+                    f"➥ **Owner :**"
+                    f" {ALIVE_NAME} \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.ping$")

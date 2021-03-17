@@ -47,15 +47,9 @@ async def pingme(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏...")
-    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
-    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
-    await pong.edit("**40% ████▒▒▒▒▒▒**")
-    await pong.edit("**60% ██████▒▒▒▒**")
-    await pong.edit("**80% ████████▒▒**")
-    await pong.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃\n"
+    await pong.edit(f"⚡️𝙁𝙇𝘼𝙎𝙃 \n"
                     f"➥ __Sinyal :__"
                     f" __%sms__ \n"
                     f"➥ __Online: __"

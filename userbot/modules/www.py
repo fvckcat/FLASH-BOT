@@ -100,7 +100,6 @@ async def pingme(pong):
     await pong.edit(" ⚡𝙊𝙏")
     await pong.edit(" ⚡𝙏")
     await pong.edit(" ⚡")
-    await pong.edit(" ⚡")
     await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")
     await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")
     await pong.edit(" ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡")

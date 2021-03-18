@@ -255,21 +255,20 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:falive|xon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**▬▬▬▬▬▬❙۩♛۩❙▬▬▬▬▬▬**\n"
-        f"     **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n\n"
-        f"❃ **Bee**     \n   ➥ `{DEFAULTUSER}` \n"
-        f"❃ **Username** \n   ➥ `@{user.username}` \n"
-        f"❃ **Telethon** \n   ➥ `Versi {version.__version__}` \n"
-        f"❃ **Python**   \n   ➥ `Versi {python_version()}` \n"
-        f"❃ **Versi Bot**\n   ➥ `{BOT_VER}` \n"
-        f"❃ **Modul**    \n   ➥ `{len(modules)}` \n\n"
-        f"❃ **Bee Repo:** [Lord-Userbot](https://github.com/fvckcat/FLASH-BOT)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Punya:** [Toni](t.me/bluuebluesky)\n"
-        f"**▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬**")
+        f"╭┈──────────────────┈╮ \n"
+        f"**      ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗟 𝗢 𝗥 𝗗 💢  **\n"
+        f"╭┈──────────────────┈╯ \n"
+        f"**➥ Owner       :  **[Toni](t.me/bluuebluesky)\n"
+        f"**➥ Attitude    :  **Ver {version.__version__} \n"
+        f"**➥ Dewasa    :  **Ver {python_version()} \n"
+        f"**➥ Akhlak      :  **{BOT_VER} \n"
+        f"**➥ Pahala      :  **{len(modules)} \n"
+        f"╰┈────────────────┈─➤")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

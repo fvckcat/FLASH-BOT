@@ -62,7 +62,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"⚡️𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭┈──────────── \n➥ {ALIVE_NAME} ᴏꜰꜰ ᴅᴜʟᴜ\n➥ ᴀʟᴀꜱᴀɴ : {AFKREASON}\n╰┈─────────")
+        await afk_e.edit(f"⚡️𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n╭┈──────────── \n➥ {ALIVE_NAME} ᴏꜰꜰ ᴅᴜʟᴜ\n➥ ᴀʟᴀꜱᴀɴ : {AFKREASON}\n╰┈─────────")
     else:
         await afk_e.edit("⚡𝙊𝙁𝙁𝙇𝙄𝙉𝙀\n╭┈─────────────── \n➥ ᴊᴀɴɢᴀɴ ʀɪɴᴅᴜ, ʙᴇʀᴀᴛ\n╰┈─────────────")
     if user.last_name:

@@ -70,19 +70,30 @@ async def pingme(pong):
                     f" {ALIVE_NAME} \n" % (duration))
 
 
-@register(outgoing=True, pattern="^.lping$")
+@register(outgoing=True, pattern="^.fvck$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`Love Ping..............`")
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )\n                      /¯  /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ ")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ \n        ('(   (   (   (  ¯~/'  ')")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ \n        ('(   (   (   (  ¯~/'  ')\n         \                        /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ \n        ('(   (   (   (  ¯~/'  ')\n         \                        /\n          \                _.•´")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ \n        ('(   (   (   (  ¯~/'  ')\n         \                        /\n          \                _.•´\n            \              (")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\ \n        ('(   (   (   (  ¯~/'  ')\n         \                        /\n          \                _.•´\n            \              (\n              \  ")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**✣ PONG!**\n"
-                    f"❦ **Ping:** "
-                    f"`%sms` \n"
-                    f"❦ **Uptime:** "
-                    f"`{uptime}` \n" % (duration))
+    await pong.edit(f"⚡𝙁𝙇𝘼𝙎𝙃 𝙋𝙄𝙉𝙂 \n"
+                    f"╭┈──────────── \n"
+                    f"➥ **Sinyal  :**"
+                    f" %sms \n"
+                    f"➥ **Owner :**"
+                    f" {ALIVE_NAME} \n"
+                    f"╰┈─────────" % (duration))
 
 
 @register(outgoing=True, pattern="^.fping$")
@@ -238,7 +249,7 @@ async def pingme(pong):
     await pong.edit("⚡ 𝙎𝙄𝙉𝙔𝘼𝙇\n`%sms`" % (duration))
 
 CMD_HELP.update(
-    {"ping": "`.ping` ; `.lping` ; `.xping` ; `.fping`\
+    {"ping": "`.ping` ; `.fvck` ; `.xping` ; `.fping`\
     \nUsage: Untuk menunjukkan ping bot.\
     \n\n`.speed`\
     \nUsage: Untuk menunjukkan kecepatan.\

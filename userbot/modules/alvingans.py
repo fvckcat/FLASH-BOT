@@ -301,6 +301,31 @@ async def typewriter(typew):
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
 
+@register(outgoing=True, pattern='^.foff(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(".                       /¯ )\n"
+                     "                      /¯  /\n"
+                     "                    /    /\n"
+                     "              /´¯/'   '/´¯¯`•¸\n"
+                     "          /'/   /    /       /¨¯\ \n"
+                     "        ('(   (   (   (  ¯~/'  ')\n"
+                     "         \                        /\n"
+                     "          \                _.•´\n"
+                     "            \              (\n"
+                     "              \  ")
+
+@register(outgoing=True, pattern='^.crash(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit(". ░█░  ░█░░█▀▀▀█░░ █░  ░█\n"
+                     "    █░░░█░░█░░░█░░█░░░█\n"
+                     "    ▀▀▀▀█░░█░░░█░░▀▀▀▀█\n"
+                     "    ░░░░█░░▀▀▀▀▀░░░░░░█\n"
+                     "┏━━━━━━━━━🌐━━━━━━━━━━┓\n"
+                     "𝙴𝚁𝚁𝙾𝚁 𝟺𝟶𝟺 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽.\n"
+                     "┗━━━━━━━━━💠━━━━━━━━━━┛")
+
 CMD_HELP.update({
     "vip":
     "`.bulan` ; `.hati` ; `.bernyanyi`\
@@ -311,6 +336,6 @@ CMD_HELP.update({
     \nUsage: jempol\
     \n\n`.awkwok`\
     \nUsage: ketawa lari.\
-    \n\n`.ular` ; `.babi` ; `.ajg`\
+    \n\n`.ular` ; `.babi` ; `.foff` ; `.crash` ; `.ajg`\
     \nUsage: liat sendiri."
 })

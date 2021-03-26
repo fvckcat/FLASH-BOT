@@ -308,12 +308,13 @@ async def typewriter(typew):
                      "                      /¯  /\n"
                      "                    /    /\n"
                      "              /´¯/'   '/´¯¯`•¸\n"
-                     "          /'/   /    /       /¨¯\ \n"
+                     "          /'/   /    /       /¨¯\\ \n"
                      "        ('(   (   (   (  ¯~/'  ')\n"
-                     "         \                        /\n"
-                     "          \                _.•´\n"
-                     "            \              (\n"
-                     "              \  ")
+                     "         \\                        /\n"
+                     "          \\                _.•´\n"
+                     "            \\              (\n"
+                     "              \\  ")
+
 
 @register(outgoing=True, pattern='^.crash(?: |$)(.*)')
 async def typewriter(typew):

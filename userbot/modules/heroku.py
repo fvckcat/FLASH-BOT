@@ -187,12 +187,12 @@ async def dyno_usage(dyno):
             await dyno.edit(
                 "⚡️ 𝙁𝙇𝘼𝙎𝙃 𝙆𝙐𝙊𝙏𝘼\n╭ ━━━━━━━━━━━━━━━━━ ╮\n"
                 f"**      Kuota Terpakai :**\n"
-                f"  ➥ `{AppHours} Jam - "
-                f"{AppMinutes} Menit - {AppPercentage}%`"
+                f"  ➥ {AppHours} Jam - "
+                f"{AppMinutes} Menit - {AppPercentage}%"
                 "\n\n"
                 "**      Kuota Tersisa :**\n"
-                f"  ➥ `{hours} Jam - {minutes} Menit "
-                f"- {percentage}%`\n"
+                f"  ➥ {hours} Jam - {minutes} Menit "
+                f"- {percentage}%\n"
                 "╰ ━━━━━━━━━━━━━━━━━ ╯"
             )
             await asyncio.sleep(20)

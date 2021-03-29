@@ -1,10 +1,10 @@
-# Port By LiuAlvinas/Alvin For Lord Userbot From Ultroid, Thanks
+# Port By fvckcat/AntoniPrananda For FLASH-BOT From Ultroid, Thanks
 # Based Plugins
 # Fixed By ManusiaRakitann/Koala
 # Dont Remove
 
 
-# Alvin Ganteng
+# Toni Ganteng
 
 from PIL import Image
 import cv2
@@ -12,7 +12,7 @@ import os
 from userbot.events import register
 from userbot import CMD_HELP, bot
 
-# Ngapain Kesini Ajg Hus
+# Ada Perlu Apa
 
 
 @register(outgoing=True, pattern="^.tiny(?: |$)(.*)", disable_errors=True)
@@ -21,9 +21,9 @@ async def ultiny(event):
     if not (reply and (reply.media)):
         await event.edit("`Mohon Balas Ke Sticker`")
         return
-    xx = await event.edit("`Memproses Tiny....`")
+    xx = await event.edit("`Kita Kecilin Dulu Stickernya....`")
     ik = await bot.download_media(reply)
-    im1 = Image.open("Flash-Bot/flashbot.png")
+    im1 = Image.open("FlashBot/flashbot.png")
     if ik.endswith(".tgs"):
         await event.client.download_media(reply, "ult.tgs")
         os.system("lottie_convert.py ult.tgs json.json")
@@ -87,8 +87,8 @@ async def ultiny(event):
     os.remove(file)
     os.remove(ik)
 
-# Port By Alvin Ganteng/liualvinas
-# Lord - Userbot
+# Port By fvckcat/AntoniPrananda
+# FLASH - BOT
 
 CMD_HELP.update({"tiny": "`.tiny`\
-    \nPenjelasan: Untuk Memperkecil Sticker."})
+    \nPenjelasan: Untuk Membuat Sticker Menjadi Kecil."})

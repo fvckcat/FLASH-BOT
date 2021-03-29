@@ -218,7 +218,7 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:flash|flashdon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:falive|fon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -255,7 +255,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:falive|xon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -289,42 +289,8 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
-async def amireallyalive(alive):
-    await bot.get_me()
-    await get_readable_time((time.time() - StartTime))
-    output = (
-        f"━━━━━━━━━━━━━━━━━━━━━━\n"
-        f"**          𝗙 𝗟 𝗔 𝗦 𝗛 - 👑 - 𝗟 𝗢 𝗥 𝗗  **\n"
-        f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"⚡️  𝗢𝘄𝗻𝗲𝗿     :  [Toni](t.me/bluuebluesky)\n"
-        f"⚡️  𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 :  Ver {version.__version__} \n"
-        f"⚡️  𝗣𝘆𝘁𝗵𝗼𝗻    :  Ver {python_version()} \n"
-        f"⚡️  𝗕𝗼𝘁 𝗩𝗲𝗿   :  {BOT_VER} \n"
-        f"⚡️  𝗠𝗼𝗱𝘂𝗹𝗲𝘀 :  {len(modules)} \n\n"
-        f"    [FlashBot](https://github.com/fvckcat/FLASH-BOT) | [Channel](t.me/candaanda) | [Instagram](https://www.instagram.com/antoniprananda)\n"
-        f"╰━━━━━━━━━━━━━━━━━━━━╯")
-    if ALIVE_LOGO:
-        try:
-            logo = ALIVE_LOGO
-            await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(500)
-            await msg.delete()
-        except BaseException:
-            await alive.edit(
-                output + "\n\n *`Logo Yang Disediakan Tidak Valid."
-                "\nPastikan Tautan Yang Anda Gunakan Valid`"
-            )
-            await asyncio.sleep(100)
-            await alive.delete()
-    else:
-        await alive.edit(output)
-        await asyncio.sleep(100)
-        await alive.delete()
 
-
-@register(outgoing=True, pattern=r"^\.(?:lebah|on)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))

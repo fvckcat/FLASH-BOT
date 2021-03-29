@@ -129,6 +129,16 @@ async def typewriter(typew):
 # Alpinnnn Gans
 
 
+@register(outgoing=True, pattern='^.usagee(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Mengecek Sisa Kuota...`")
+    sleep(1)
+    await typew.edit("╭┈──────────────────┈╮ \n    ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗞 𝗨 𝗢 𝗧 𝗔 💢  \n╭┈──────────────────┈╯ \n➥ **Kuota Terpakai :**\n➥ 0 Jam - 0 Menit - 0%\n┈───────────────────┈\n➥ **Kuota Tersisa :**\n➥ 8888 Jam - 8888 Menit - 100%\n╰┈────────────────┈─➤"
+                     )
+# @BluueBlueSky
+
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
@@ -164,7 +174,7 @@ async def _(event):
 # Lord
 CMD_HELP.update({
     "animasi":
-    "`.nah` ; `.huh` ; `.owner`\
+    "`.nah` ; `.usagee` ; `.huh` ; `.owner`\
     \nUsage: cobain.\
     \n\n`.bunga` ; `.buah`\
     \nUsage: animasi.\

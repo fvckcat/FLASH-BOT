@@ -25,9 +25,9 @@ async def var(m):
 
 
 CMD_HELP.update({
-    "flashhelper":
-    "`.helper`\
+    "helper":
+    "`.flashhelp`\
 \nUsage: Bantuan Untuk Flash-Bot.\
-\n`.lordvar`\
+\n`.flashvar`\
 \nUsage: Melihat Daftar Vars Flash-Bot."
 })

@@ -1,10 +1,10 @@
-# Port By fvckcat/AntoniPrananda For FLASH-BOT From Ultroid, Thanks
+# Port By LiuAlvinas/Alvin For FLASH-BOT From Ultroid, Thanks
 # Based Plugins
 # Fixed By ManusiaRakitann/Koala
 # Dont Remove
 
 
-# Toni Ganteng
+# Toni Dan Alvin Ganteng
 
 from PIL import Image
 import cv2
@@ -87,7 +87,7 @@ async def ultiny(event):
     os.remove(file)
     os.remove(ik)
 
-# Port By fvckcat/AntoniPrananda
+# Port By LiuAlvinas/Alvin
 # FLASH - BOT
 
 CMD_HELP.update({"tiny": "`.tiny`\

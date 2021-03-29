@@ -289,7 +289,6 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-
 @register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()

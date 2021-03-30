@@ -22,7 +22,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("`Bee, Ini Tidak Mungkin Tanpa ID Pengguna`")
+            await event.edit("`Maaf, Ini Tidak Mungkin Tanpa ID Pengguna`")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -72,7 +72,7 @@ async def handler(tele):
                                 tele.chat_id, guser.id, view_messages=False
                             )
                             await tele.reply(
-                                f"**Bee, Pengguna Gban Telah Bergabung** \n"
+                                f"**Pengguna Gban Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
                                 f"**Aksi**  : `Banned`"
                             )
@@ -206,7 +206,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"⚡️𝙐𝙉𝙂𝙇𝙊𝘽𝘼𝙇 𝘽𝘼𝙉𝙉𝙀𝘿\n╭┈───────────────── \n**❖ Perintah :** `{ALIVE_NAME}`\n**❖ Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**❖ Aksi:** `Membatalkan Global Banned`"
+        f"⚡️𝙐𝙉𝙂𝙇𝙊𝘽𝘼𝙇 𝘽𝘼𝙉𝙉𝙀𝘿\n╭┈───────────────── \n➥ **Ungban User :** [{user.first_name}](tg://user?id={user.id})\n➥ **Ungban By     :** {ALIVE_NAME}\n╰┈─────────────"
     )
 
 

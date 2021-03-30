@@ -44,7 +44,7 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 CMD_HELP.update({
-    "flash":
+    "memes3":
     "`.sadboy`\
     \nUsage: hiks\
     \n\n`.punten` ; `.pantau`\

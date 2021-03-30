@@ -50,7 +50,7 @@ async def _(event):
 # Ported For Flash-Bot By liualvinas/Alvin
 
 CMD_HELP.update({
-    "flashfun": "\
+    "havefun": "\
 `.xogame`\
 \nUsage: Mainkan game XO bersama temanmu.\
 \n\n`.mod <nama app>`\

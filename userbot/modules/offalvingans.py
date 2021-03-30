@@ -163,8 +163,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)} Detik`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"**✥ {ALIVE_NAME} Sedang OFF** {afk_since} **Yang Lalu.**\
-                        \n➥ **Alasan:** `{AFKREASON}`")
+                    await mention.reply(f"║▌║ █║▌│║▌║▌█║\n     [ʟᴇʙᴀʜ | ʟᴀɢɪ ᴏꜰꜰ](t.me/bluuebluesky)")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})

@@ -154,13 +154,13 @@ async def mention_afk(mention):
                     afk_since = date.strftime("%A, %Y %B %m, %H:%I")
                 else:
                     wday = now + datetime.timedelta(days=-days)
-                    afk_since = wday.strftime('%A')
+                    wday.strftime('%A')
             elif hours > 1:
-                afk_since = f"`{int(hours)} Jam {int(minutes)} Menit`"
+                f"`{int(hours)} Jam {int(minutes)} Menit`"
             elif minutes > 0:
-                afk_since = f"`{int(minutes)} Menit {int(seconds)} Detik`"
+                f"`{int(minutes)} Menit {int(seconds)} Detik`"
             else:
-                afk_since = f"`{int(seconds)} Detik`"
+                f"`{int(seconds)} Detik`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
                     await mention.reply(f"║▌║ █║▌│║▌║▌█║\n     [ʟᴇʙᴀʜ | ʟᴀɢɪ ᴏꜰꜰ](t.me/bluuebluesky)")

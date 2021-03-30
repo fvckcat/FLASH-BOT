@@ -27,7 +27,7 @@ async def insta(event):
     if reply_message.sender.bot:
         await event.edit("Sedang Memprosess...")
         return
-    await event.edit("`Mohon Tunggu...")
+    await event.edit("`Mohon Tunggu...`")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -47,7 +47,7 @@ async def insta(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"Woowwww⚡",
+                caption=f"║▌║█║▌│║▌║▌█\n    @BluueBlueSky",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
             await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))

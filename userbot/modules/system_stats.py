@@ -259,7 +259,7 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
+    await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
     await alive.edit("⚡")
@@ -295,7 +295,7 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
+    await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
     await alive.edit("⚡")

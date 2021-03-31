@@ -24,6 +24,7 @@ async def help(event):
             await asyncio.sleep(200)
             await event.delete()
     else:
+        await event.edit("⚡")
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)

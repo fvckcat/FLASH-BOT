@@ -222,6 +222,8 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
+    await alive.edit("⚡")
     output = (
         f" **- 𝗕𝗘𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 -** \n"
         f"**{FLASH_TEKS_KUSTOM}**\n\n"
@@ -257,8 +259,10 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
-    await bot.get_me()
+    user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
+    await alive.edit("⚡")
     output = (
         f"╭┈──────────────────┈╮ \n"
         f"**      ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗟 𝗢 𝗥 𝗗 💢  **\n"
@@ -291,8 +295,10 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
 async def amireallyalive(alive):
-    await bot.get_me()
+    user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
+    await alive.edit("⚡")
     output = (
         f"╭═══════════════════╮\n"
         f"**          𝗕𝗘𝗘𝗕𝗢𝗧 - 𝗟𝗢𝗥𝗗𝗕𝗢𝗧**\n"
@@ -344,22 +350,21 @@ async def amireallyalivereset(ureset):
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
-CMD_HELP.update({
-    "system":
-    "`.sysd`\
-\nUsage: Shows system information using neofetch.\
-\n\n`.botver`\
-\nUsage: Shows the userbot version.\
-\n\n`.pip` <module(s)>\
-\nUsage: Does a search of pip modules(s).\
-\n\n`.start`\
-\nUsage: Type .start to see whether your bot is working or not.\
-\n\n`.aliveu` <text>\
-\nUsage: Changes the 'user' in alive to the text you want.\
-\n\n`.resetalive`\
-\nUsage: Resets the user to default.\
-\n\n`.db`\
-\nUsage:Shows database related info.\
-\n\n.`.spc`\
-\nUsage:Show system specification."
-})
+CMD_HELP.update({"sysd": "`.sysd`\
+    \nFungsi: Menampilkan informasi sistem menggunakan neofetch.\
+    \n\n.spc\
+    \nFungsi: Tampilkan spesifikasi sistem.\
+    \n\n`.db`\
+    \nFungsi: Menampilkan info database."})
+CMD_HELP.update({"botver": "`.botver`\
+    \nFungsi: Menampilkan versi userbot."})
+
+CMD_HELP.update({"pip": "`.pip <module(s)>`\
+    \nFungsi: Melakukan pencarian modul pip."})
+
+CMD_HELP.update({"alive": "`.alive` | `.on`\
+    \nFungsi: Ketik .alive/.on untuk melihat apakah sistem bot Anda mennyala atau tidak.\
+    \n\n`.aliveu <text>`\
+    \nFungsi: Mengubah 'pengguna' menjadi teks yang Anda inginkan.\
+    \n\n`.resetalive`\
+    \nFungsi: Mengatur ulang pengguna ke default."})

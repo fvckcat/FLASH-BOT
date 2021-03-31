@@ -26,16 +26,7 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    "**▬▬▬▬▬▬❙۩♛۩❙▬▬▬▬▬▬**\n"
-    f"**Welcome To Room Chat** **{DEFAULTUSER}**\n"
-    f"__Saya Adalah Bot Yang Menjaga Room Chat__ **Lord {DEFAULTUSER}.** "
-    "__Mohon Jangan Melakukan Spam Ke Room Chat Lord__ "
-    "__Karna Jika Anda Melakukan Itu Saya Akan Otomatis__ "
-    f"**Memblokir Anda**, __Tunggulah Sampai__ **Lord {DEFAULTUSER}** "
-    "__Menerima__ **Pesan Anda**, __Terimakasih ヅ__\n\n"
-    "**PESAN OTOMATIS**"
-    "\n━━━━━━━━━━━━━━━"
-    "\n**▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬**")
+    "╭┈─────────────┈╮\n      𝙋𝙀𝙎𝘼𝙉 𝙊𝙏𝙊𝙈𝘼𝙏𝙄𝙎\n╭┈─────────────┈╯\n➥𝘔𝘢𝘢𝘧, 𝘬𝘢𝘮𝘶 𝘣𝘦𝘭𝘶𝘮 𝘥𝘪𝘪𝘫𝘪𝘯𝘬𝘢𝘯 𝘮𝘦𝘯𝘨𝘪𝘳𝘪𝘮 𝘱𝘦𝘴𝘢𝘯, 𝘵𝘶𝘯𝘨𝘨𝘶 𝘴𝘢𝘫𝘢 𝘴𝘢𝘮𝘱𝘢𝘪 𝘱𝘦𝘴𝘢𝘯𝘯𝘮𝘶 𝘥𝘪𝘭𝘪𝘩𝘢𝘵.\n➥𝘚𝘦𝘭𝘢𝘨𝘪 𝘮𝘦𝘯𝘶𝘯𝘨𝘨𝘶 𝘫𝘢𝘯𝘨𝘢𝘯 𝘮𝘦𝘭𝘢𝘬𝘶𝘬𝘢𝘯 𝘴𝘱𝘢𝘮, 𝘢𝘵𝘢𝘶 𝘢𝘬𝘢𝘯 𝘥𝘪𝘭𝘢𝘬𝘶𝘬𝘢𝘯 𝘱𝘦𝘮𝘣𝘭𝘰𝘬𝘪𝘳𝘢𝘯 𝘰𝘵𝘰𝘮𝘢𝘵𝘪𝘴, 𝘢𝘯𝘥𝘢 𝘴𝘰𝘱𝘢𝘯 𝘴𝘢𝘺𝘢 𝘴𝘦𝘨𝘢𝘯.\n╰┈───────────────────┈─➤")
 # =================================================================
 
 
@@ -93,9 +84,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 8:
                 await event.respond(
-                    "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
-                    "`Ke Room Chat Lord ツ`\n"
-                )
+                    "`Anda Telah Di Blokir Karna Melakukan Spam`")
 
                 try:
                     del COUNT_PM[event.chat_id]
@@ -104,7 +93,7 @@ async def permitpm(event):
                     if BOTLOG:
                         await event.client.send_message(
                             BOTLOG_CHATID,
-                            "Terjadi Masalah Saat Menghitung Pesan Pribadi, Mohon Restart Bot!",
+                            "`Terjadi Masalah Saat Menghitung Pesan Pribadi, Mohon Restart Bot!`",
                         )
                     return LOGS.info(
                         "Penghitungan Pesan Pribadi Terjadi Kesalahan")
@@ -234,9 +223,9 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima ツ`")
+        return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima`")
 
-    await apprvpm.edit(f"`Hai` [{name0}](tg://user?id={uid}) `Pesan Anda Sudah Diterima ツ`")
+    await apprvpm.edit(f"`Hai` [{name0}](tg://user?id={uid}) `Pesan Anda Sudah Diterima`")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -330,7 +319,7 @@ async def unblockpm(unblock):
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
-        return await cust_msg.edit("**Lord Anda Harus Menyetel** `PM_AUTO_BAN` **Ke** `True`")
+        return await cust_msg.edit("**Anda Harus Mengatur** `.set var PM_AUTO_BAN True`")
     try:
         import userbot.modules.sql_helper.globals as sql
     except AttributeError:
@@ -389,23 +378,23 @@ async def add_pmsg(cust_msg):
 CMD_HELP.update(
     {
         "pm": ">`.setuju | .ok`"
-        "\nUsage: Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
+        "\nFungsi: Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
         "\n\n>`.tolak | .nopm`"
-        "\nUsage: Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
+        "\nFungsi: Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
         "\n\n>`.block`"
-        "\nUsage: Memblokir Orang Di PM."
+        "\nFungsi: Memblokir Orang Di PM."
         "\n\n>`.unblock`"
-        "\nUsage: Membuka Blokir."
+        "\nFungsi: Membuka Blokir."
         "\n\n>`.notifoff`"
-        "\nUsage: Mematikan notifikasi pesan yang belum diterima."
+        "\nFungsi: Mematikan notifikasi pesan yang belum diterima."
         "\n\n>`.notifon`"
-        "\nUsage: Menghidupkan notifikasi pesan yang belum diterima."
+        "\nFungsi: Menghidupkan notifikasi pesan yang belum diterima."
         "\n\n>`.set pm_msg` <balas ke pesan>"
-        "\nUsage: Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
+        "\nFungsi: Menyetel Pesan Pribadimu untuk orang yang pesannya belum diterima"
         "\n\n>`.get pm_msg`"
-        "\nUsage: Mendapatkan Custom pesan PM mu"
+        "\nFungsi: Mendapatkan Custom pesan PM mu"
         "\n\n>`.reset pm_msg`"
-        "\nUsage: Menghapus pesan PM ke default"
+        "\nFungsi: Menghapus pesan PM ke default"
         "\n\nPesan Pribadi yang belum diterima saat ini tidak dapat disetel"
-        "\nke teks format kaya bold, underline, link, dll."
+        "\nke teks format seperti bold, underline, link, dll."
         "\nPesan akan terkirim normal saja"})

@@ -301,19 +301,15 @@ async def twrp(request):
     await request.edit(reply)
 
 
-CMD_HELP.update(
-    {
-        "android": ">`.magisk`"
-        "\nUntuk Mendapatkan rilis MAGISK terbaru"
-        "\n\n>`.device <codename>`"
-        "\nFungsi: Get info about android device codename or model."
-        "\n\n>`.codename <brand> <device>`"
-        "\nFungsi: Cari perangkat Android codename."
-        "\n\n>`.pixeldl` **<download.pixelexperience.org>**"
-        "\nFungsi: Download pixel experience ROM ke server userbot anda."
-        "\n\n>`.specs <brand> <device>`"
-        "\nFungsi: Untuk mendapatkan info spesifikasi perangkat."
-        "\n\n>`.twrp <codename>`"
-        "\nFungsi: Mendapatkan versi terbaru twrp download untuk perangkat android."
-    }
-)
+CMD_HELP.update({"android": ">`.magisk`"
+                 "\nUntuk Mendapatkan rilis MAGISK terbaru"
+                 "\n\n>`.device <codename>`"
+                 "\nFungsi: Get info about android device codename or model."
+                 "\n\n>`.codename <brand> <device>`"
+                 "\nFungsi: Cari perangkat Android codename."
+                 "\n\n>`.pixeldl` **<download.pixelexperience.org>**"
+                 "\nFungsi: Download pixel experience ROM ke server userbot anda."
+                 "\n\n>`.specs <brand> <device>`"
+                 "\nFungsi: Untuk mendapatkan info spesifikasi perangkat."
+                 "\n\n>`.twrp <codename>`"
+                 "\nFungsi: Mendapatkan versi terbaru twrp download untuk perangkat android."})

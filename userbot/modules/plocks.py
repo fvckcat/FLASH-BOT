@@ -4,7 +4,7 @@
 from userbot import bot
 
 
-@register(outgoing=True, pattern="^\.plock(?: |$)(.*)")
+@register(outgoing=True, pattern="^\\.plock(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -59,55 +59,55 @@ async def _(event):
     if input_str == "msg":
         if msg:
             return await event.edit("`Pesan Terkunci di grup ini.`"
-            )
+                                    )
         if umsg:
             return await event.edit("`Orang ini tidak dapat mengirim pesan di grup ini.`"
-            )
+                                    )
         umsg = True
         locktype = "messages"
     elif input_str == "media":
         if media:
             return await event.edit("`Tidak dapat mengirim media di grup ini.`"
-            )
+                                    )
         if umedia:
             return await event.edit("`Orang ini tidak dapat mengirim media di grup ini.`"
-            )
+                                    )
         umedia = True
         locktype = "media"
     elif input_str == "sticker":
         if sticker:
             return await event.edit("`Tidak dapat mengirim sticker di grup ini.`"
-            )
+                                    )
         if usticker:
             return await event.edit("`Orang ini tidak dapat mengirim sticker di grup ini.`"
-            )
+                                    )
         usticker = True
         locktype = "stickers"
     elif input_str == "preview":
         if embed_link:
             return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
-            )
+                                    )
         if uembed_link:
             return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
-            )
+                                    )
         uembed_link = True
         locktype = "preview links"
     elif input_str == "gif":
         if gif:
             return await event.edit("`Tidak dapat mengirim gifs di grup ini.`"
-            )
+                                    )
         if ugif:
             return await event.edit("`Orang ini tidak dapat mengirim gifs di grup ini.`"
-            )
+                                    )
         ugif = True
         locktype = "GIFs"
     elif input_str == "game":
         if gamee:
             return await event.edit("`Tidak dapat bermain inline game di grup ini.`"
-            )
+                                    )
         if ugamee:
             return await event.edit("`Orang ini tidak dapat bermain inline game di grup ini.`"
-            )
+                                    )
         ugamee = True
         locktype = "games"
     elif input_str == "inline":

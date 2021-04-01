@@ -112,60 +112,46 @@ async def _(event):
         locktype = "games"
     elif input_str == "inline":
         if ainline:
-            return await edit_delete(
-                event, "`This group is already locked with using inline bots`"
+            return await event.edit("`Tidak dapat menggunakan inline bot di grup ini.`"
             )
         if uainline:
-            return await edit_delete(
-                event, "`This user is already locked with using inline bots`"
+            return await event.edit("`Orang ini tidak dapat menggunakan inline bot di grup ini.`"
             )
         uainline = True
         locktype = "inline bots"
     elif input_str == "poll":
         if gpoll:
-            return await edit_delete(
-                event, "`This group is already locked with sending polls`"
+            return await event.edit("`Tidak dapat mengirim polling di grup ini.`"
             )
         if ugpoll:
-            return await edit_delete(
-                event, "`This user is already locked with sending polls`"
+            return await event.edit("`Orang ini tidak dapat mengirim polling di grup ini.`"
             )
         ugpoll = True
         locktype = "polls"
     elif input_str == "invite":
         if adduser:
-            return await edit_delete(
-                event, "`This group is already locked with adding members`"
+            return await event.edit("`Tidak dapat menambahkan anggota di grup ini.`"
             )
         if uadduser:
-            return await edit_delete(
-                event, "`This user is already locked with adding members`"
+            return await event.edit("`Orang ini Tidak dapat menambahkan anggota di grup ini.`"
             )
         uadduser = True
         locktype = "invites"
     elif input_str == "pin":
         if cpin:
-            return await edit_delete(
-                event,
-                "`This group is already locked with pinning messages by users`",
+            return await event.edit("`Tidak dapat menyematkan pesan di grup ini.`",
             )
         if ucpin:
-            return await edit_delete(
-                event,
-                "`This user is already locked with pinning messages by users`",
+            return await event.edit("`Orang ini tidak dapat menyematkan pesan di grup ini.`",
             )
         ucpin = True
         locktype = "pins"
     elif input_str == "info":
         if changeinfo:
-            return await edit_delete(
-                event,
-                "`This group is already locked with Changing group info by users`",
+            return await event.edit("`Tidak dapat mengganti info grup ini.`",
             )
         if uchangeinfo:
-            return await edit_delete(
-                event,
-                "`This user is already locked with Changing group info by users`",
+            return await event.edit("`Orang ini tidak dapat mengganti info grup ini.`",
             )
         uchangeinfo = True
         locktype = "chat info"
@@ -184,8 +170,7 @@ async def _(event):
         locktype = "everything"
     else:
         if input_str:
-            return await edit_delete(
-                event, f"**Invalid lock type :** `{input_str}`", time=5
+            return await event.edit(f"`Invalid lock type :` `{input_str}`", time=5
             )
 
         return await edit_or_reply(event, "`I can't lock nothing !!`")

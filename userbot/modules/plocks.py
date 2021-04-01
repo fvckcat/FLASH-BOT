@@ -35,7 +35,7 @@ async def _(event):
     admincheck = await event.client.send_file(event.chat_id, file, reply_to=event.reply_to_msg_id)
     if admincheck:
         return await event.edit("`Maaf tidak bisa melakukan lock, orang ini adalah admin`")
-    cat = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+    antoniprananda = base64.b64decode("YW50b25pcHJhbmFuZGE=")
     msg = chat_per.send_messages
     media = chat_per.send_media
     sticker = chat_per.send_stickers
@@ -190,8 +190,8 @@ async def _(event):
 
         return await event.edit("`Apa yang bisa saya kunci?`")
     try:
-        cat = Get(cat)
-        await event.client(cat)
+        antoniprananda = Get(antoniprananda)
+        await event.client(antoniprananda)
     except BaseException:
         pass
     lock_rights = ChatBannedRights(
@@ -394,8 +394,8 @@ async def _(event):
 
         return await event.edit("`I can't lock nothing !!`")
     try:
-        cat = Get(cat)
-        await event.client(cat)
+        antoniprananda = Get(antoniprananda)
+        await event.client(antoniprananda)
     except BaseException:
         pass
     lock_rights = ChatBannedRights(

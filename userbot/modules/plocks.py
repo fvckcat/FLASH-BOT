@@ -188,17 +188,16 @@ async def locks(event):
         pass
     lock_rights = ChatBannedRights(
         until_date=None,
-        send_messages=umsg,
-        send_media=umedia,
-        send_stickers=usticker,
-        send_gifs=ugif,
-        send_games=ugamee,
-        send_inline=uainline,
-        embed_links=uembed_link,
-        send_polls=ugpoll,
-        invite_users=uadduser,
-        pin_messages=ucpin,
-        change_info=uchangeinfo,
+        send_messages=msg,
+        send_media=media,
+        send_stickers=sticker,
+        send_gifs=gif,
+        send_games=gamee,
+        send_inline=ainline,
+        send_polls=gpoll,
+        invite_users=adduser,
+        pin_messages=cpin,
+        change_info=changeinfo,
     )
     try:
         await event.client(
@@ -396,17 +395,16 @@ async def locks(event):
         pass
     lock_rights = ChatBannedRights(
         until_date=None,
-        send_messages=umsg,
-        send_media=umedia,
-        send_stickers=usticker,
-        send_gifs=ugif,
-        send_games=ugamee,
-        send_inline=uainline,
-        embed_links=uembed_link,
-        send_polls=ugpoll,
-        invite_users=uadduser,
-        pin_messages=ucpin,
-        change_info=uchangeinfo,
+        send_messages=msg,
+        send_media=media,
+        send_stickers=sticker,
+        send_gifs=gif,
+        send_games=gamee,
+        send_inline=ainline,
+        send_polls=gpoll,
+        invite_users=adduser,
+        pin_messages=cpin,
+        change_info=changeinfo,
     )
     try:
         await event.client(

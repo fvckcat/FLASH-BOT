@@ -1,11 +1,8 @@
 # PORT BY TONI / LEBAH / @BLUEEBLUESKY FROM CAT USERBOT
 # BASED ON PLUGINS
 
-from telethon.errors.rpcerrorlist import MessageTooLongError, UserIdInvalidError
 from telethon.tl.functions.channels import (
-    EditAdminRequest,
     EditBannedRequest,
-    EditPhotoRequest,
 )
 
 from userbot import CMD_HELP

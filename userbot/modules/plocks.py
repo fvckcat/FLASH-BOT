@@ -2,8 +2,7 @@
 # Fork From Cat Userbot To FLASH-BOT
 
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot import CMD_HELP
+
 
 @register(outgoing=True, pattern="^\\.plock(?: |$)(.*)")
 async def _(event):

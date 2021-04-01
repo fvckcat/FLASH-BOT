@@ -175,11 +175,12 @@ async def locks(event):
         uchangeinfo = True
         locktype = "everything"
     else:
-        if input_str:
-            return await event.edit(f"`Invalid lock type :` `{input_str}`", time=5
-                                    )
-
-        return await event.edit("`Apa yang bisa saya kunci?`")
+        if not input_str:
+            await event.edit("`Mohon Maaf, Apa Yang Harus Saya Kunci?`")
+            return
+        else:
+            await event.edit(f"`Maaf Jenis Yang Mau Anda Kunci Tidak Valid` `{input_str}`")
+            return
     try:
         antoniprananda = Get(antoniprananda)
         await event.client(antoniprananda)
@@ -205,9 +206,9 @@ async def locks(event):
                                                banned_rights=lock_rights))
         await event.edit(f"`Locked {locktype} for this user !!`")
     except BaseException as e:
-        await event.edit(f"`Do I have proper rights for that ??`\n\n**Error:** `{str(e)}`",
-                         time=5,
-                         )
+        await event.edit(
+            f"`Apakah Kamu Mempunyai Izin Melakukan Itu Disini?`\n**Kesalahan:** {str(e)}")
+        return
 
 
 @register(outgoing=True, pattern=r"^\\.punlock(?: |$)(.*)")
@@ -381,11 +382,13 @@ async def locks(event):
             uchangeinfo = False
         locktype = "everything"
     else:
-        if input_str:
-            return await event.edit(f"**Invalid lock type :** `{input_str}`", time=5
-                                    )
+        if not input_str:
+            await event.edit(f"`Maaf Jenis Yang Mau Anda Kunci Tidak Valid` `{input_str}`")
+            return
 
-        return await event.edit("`I can't lock nothing !!`")
+        else:
+            await event.edit(f"`Maaf Jenis Yang Mau Anda Kunci Tidak Valid` `{input_str}`")
+            return
     try:
         antoniprananda = Get(antoniprananda)
         await event.client(antoniprananda)
@@ -411,9 +414,9 @@ async def locks(event):
                                                banned_rights=unlock_rights))
         await event.edit(f"`Unlocked {locktype} for this user !!`")
     except BaseException as e:
-        await event.edit(f"`Do I have proper rights for that ??`\n\n**Error:** `{str(e)}`",
-                         time=5,
-                         )
+        await event.edit(
+            f"`Apakah Kamu Mempunyai Izin Melakukan Itu Disini?`\n**Kesalahan:** {str(e)}")
+        return
 
 CMD_HELP.update({
     "plock":

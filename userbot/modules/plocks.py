@@ -1,7 +1,7 @@
-# Fork by Toni/@BluueBlueSky
-# Fork From Cat Userbot To FLASH-BOT
-# Base Plugins
+# PORT BY TONI / LEBAH / @BLUEEBLUESKY FROM CAT USERBOT
+# BASED ON PLUGINS
 
+from userbot import CMD_HELP
 from userbot.events import register
 
 

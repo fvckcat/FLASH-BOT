@@ -5,7 +5,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^\\.plock(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\\.plock(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -203,7 +203,7 @@ async def _(event):
                          )
 
 
-@register(outgoing=True, pattern="^\\.punlock(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\\.punlock(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return

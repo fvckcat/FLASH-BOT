@@ -1,6 +1,10 @@
 # Fork by Toni/@BluueBlueSky
 # Fork From Cat Userbot To FLASH-BOT
 
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from userbot import CMD_HELP, bot
+from userbot.events import register
+
 
 @bot.on(admin_cmd(pattern=r"plock (.*)"))
 @bot.on(sudo_cmd(pattern=r"plock (.*)", allow_sudo=True))

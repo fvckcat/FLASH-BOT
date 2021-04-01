@@ -2,7 +2,6 @@
 # Fork From Cat Userbot To FLASH-BOT
 
 
-
 @bot.on(admin_cmd(pattern=r"plock (.*)"))
 @bot.on(sudo_cmd(pattern=r"plock (.*)", allow_sudo=True))
 async def _(event):

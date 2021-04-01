@@ -4,8 +4,7 @@
 from userbot import bot
 
 
-@bot.on(admin_cmd(pattern=r"plock (.*)"))
-@bot.on(sudo_cmd(pattern=r"plock (.*)", allow_sudo=True))
+@register(outgoing=True, pattern="^\.plock(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -13,14 +12,14 @@ async def _(event):
     peer_id = event.chat_id
     reply = await event.get_reply_message()
     if not event.is_group:
-        return await edit_delete(event, "`Idiot! ,This is not a group to lock things `")
+        return await event.edit("`Maaf ini bukan grup untuk di kunci`")
     chat_per = (await event.get_chat()).default_banned_rights
     result = await event.client(
         functions.channels.GetParticipantRequest(channel=peer_id, user_id=reply.from_id)
     )
     admincheck = await is_admin(event.client, peer_id, reply.from_id)
     if admincheck:
-        return await edit_delete(event, "`This user is admin you cant play with him`")
+        return await event.edit("`Maaf tidak bisa melakukan lock, orang ini adalah admin`")
     cat = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     msg = chat_per.send_messages
     media = chat_per.send_media
@@ -59,67 +58,55 @@ async def _(event):
         uchangeinfo = changeinfo
     if input_str == "msg":
         if msg:
-            return await edit_delete(
-                event, "`This Group is already locked with messaging permission.`"
+            return await event.edit("`Pesan Terkunci di grup ini.`"
             )
         if umsg:
-            return await edit_delete(
-                event, "`This User is already locked with messaging permission.`"
+            return await event.edit("`Orang ini tidak dapat mengirim pesan di grup ini.`"
             )
         umsg = True
         locktype = "messages"
     elif input_str == "media":
         if media:
-            return await edit_delete(
-                event, "`This group is already locked with sending media`"
+            return await event.edit("`Tidak dapat mengirim media di grup ini.`"
             )
         if umedia:
-            return await edit_delete(
-                event, "`User is already locked with sending media`"
+            return await event.edit("`Orang ini tidak dapat mengirim media di grup ini.`"
             )
         umedia = True
         locktype = "media"
     elif input_str == "sticker":
         if sticker:
-            return await edit_delete(
-                event, "`This group is already locked with sending stickers`"
+            return await event.edit("`Tidak dapat mengirim sticker di grup ini.`"
             )
         if usticker:
-            return await edit_delete(
-                event, "`This user is already locked with sending stickers`"
+            return await event.edit("`Orang ini tidak dapat mengirim sticker di grup ini.`"
             )
         usticker = True
         locktype = "stickers"
     elif input_str == "preview":
         if embed_link:
-            return await edit_delete(
-                event, "`This group is already locked with previewing links`"
+            return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
             )
         if uembed_link:
-            return await edit_delete(
-                event, "`This group is already locked with previewing links`"
+            return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
             )
         uembed_link = True
         locktype = "preview links"
     elif input_str == "gif":
         if gif:
-            return await edit_delete(
-                event, "`This group is already locked with sending GIFs`"
+            return await event.edit("`Tidak dapat mengirim gifs di grup ini.`"
             )
         if ugif:
-            return await edit_delete(
-                event, "`This user is already locked with sending GIFs`"
+            return await event.edit("`Orang ini tidak dapat mengirim gifs di grup ini.`"
             )
         ugif = True
         locktype = "GIFs"
     elif input_str == "game":
         if gamee:
-            return await edit_delete(
-                event, "`This group is already locked with sending games`"
+            return await event.edit("`Tidak dapat bermain inline game di grup ini.`"
             )
         if ugamee:
-            return await edit_delete(
-                event, "`This user is already locked with sending games`"
+            return await event.edit("`Orang ini tidak dapat bermain inline game di grup ini.`"
             )
         ugamee = True
         locktype = "games"

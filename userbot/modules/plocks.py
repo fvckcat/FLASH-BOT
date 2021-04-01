@@ -2,7 +2,6 @@
 # Fork From Cat Userbot To FLASH-BOT
 # Base Plugins
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import CMD_HELP
 from userbot.events import register
 

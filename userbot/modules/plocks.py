@@ -15,7 +15,7 @@ from telethon.tl.types import (
     ChatBannedRights,
 )
 
-from userbot import CMD_HELP
+from userbot import CMD_HELP, admin
 from userbot.events import register
 
 

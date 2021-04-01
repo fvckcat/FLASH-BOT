@@ -11,7 +11,7 @@ from userbot.events import register
 
 
 @register(outgoing=True, pattern=r"^\\.plock(?: |$)(.*)")
-async def _(event):
+async def locks(event):
     if event.fwd_from:
         return
     input_str = event.pattern_match.group(1).lower()
@@ -211,7 +211,7 @@ async def _(event):
 
 
 @register(outgoing=True, pattern=r"^\\.punlock(?: |$)(.*)")
-async def _(event):
+async def locks(event):
     if event.fwd_from:
         return
     input_str = event.pattern_match.group(1)

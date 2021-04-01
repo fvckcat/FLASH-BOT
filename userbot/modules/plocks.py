@@ -2,18 +2,9 @@
 # BASED ON PLUGINS
 
 
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-
 import base64
-from telethon.tl.functions.channels import (
-    EditBannedRequest,
-)
-from telethon.tl.types import (
-    ChatBannedRights,
-)
+from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
+from telethon.tl.types import ChatBannedRights
 
 from userbot import CMD_HELP
 from userbot.events import register
@@ -23,7 +14,7 @@ from userbot.events import register
 async def _(event):
     if event.fwd_from:
         return
-    input_str = event.pattern_match.group(1)
+    input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
     reply = await event.get_reply_message()
     if not event.is_group:
@@ -209,7 +200,9 @@ async def _(event):
         change_info=uchangeinfo,
     )
     try:
-        await event.client(EditBannedRequest(peer_id, reply.from_id, lock_rights))
+        await event.client(
+            EditChatDefaultBannedRightsRequest(peer=peer_id,
+                                               banned_rights=lock_rights))
         await event.edit(f"`Locked {locktype} for this user !!`")
     except BaseException as e:
         await event.edit(f"`Do I have proper rights for that ??`\n\n**Error:** `{str(e)}`",
@@ -413,7 +406,9 @@ async def _(event):
         change_info=uchangeinfo,
     )
     try:
-        await event.client(EditBannedRequest(peer_id, reply.from_id, lock_rights))
+        await event.client(
+            EditChatDefaultBannedRightsRequest(peer=peer_id,
+                                               banned_rights=unlock_rights))
         await event.edit(f"`Unlocked {locktype} for this user !!`")
     except BaseException as e:
         await event.edit(f"`Do I have proper rights for that ??`\n\n**Error:** `{str(e)}`",

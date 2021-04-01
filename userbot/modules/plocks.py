@@ -408,7 +408,7 @@ async def _(event):
                          )
 
 CMD_HELP.update({
-    "Plock":
+    "plock":
     "`.plock <all atau Jenis>` atau `.punlock <all atau Jenis>`\
 \nFungsi: Memungkinkan anda mengunci atau membuka kunci, beberapa jenis pesan dalam obrolan.\
 \n[Anda Harus Jadi Admin Grup Untuk Menggunakan Perintah!]\

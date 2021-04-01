@@ -406,3 +406,12 @@ async def _(event):
         await event.edit(f"`Do I have proper rights for that ??`\n\n**Error:** `{str(e)}`",
                          time=5,
                          )
+
+CMD_HELP.update({
+    "Plock":
+    "`.plock <all atau Jenis>` atau `.punlock <all atau Jenis>`\
+\nFungsi: Memungkinkan anda mengunci atau membuka kunci, beberapa jenis pesan dalam obrolan.\
+\n[Anda Harus Jadi Admin Grup Untuk Menggunakan Perintah!]\
+\n\nJenis pesan yang bisa dikunci atau dibuka adalah: \
+\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`\n**Contoh:** `.plock msg` atau `.punlock msg`"
+})

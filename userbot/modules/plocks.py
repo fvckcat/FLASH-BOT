@@ -113,46 +113,46 @@ async def _(event):
     elif input_str == "inline":
         if ainline:
             return await event.edit("`Tidak dapat menggunakan inline bot di grup ini.`"
-            )
+                                    )
         if uainline:
             return await event.edit("`Orang ini tidak dapat menggunakan inline bot di grup ini.`"
-            )
+                                    )
         uainline = True
         locktype = "inline bots"
     elif input_str == "poll":
         if gpoll:
             return await event.edit("`Tidak dapat mengirim polling di grup ini.`"
-            )
+                                    )
         if ugpoll:
             return await event.edit("`Orang ini tidak dapat mengirim polling di grup ini.`"
-            )
+                                    )
         ugpoll = True
         locktype = "polls"
     elif input_str == "invite":
         if adduser:
             return await event.edit("`Tidak dapat menambahkan anggota di grup ini.`"
-            )
+                                    )
         if uadduser:
             return await event.edit("`Orang ini Tidak dapat menambahkan anggota di grup ini.`"
-            )
+                                    )
         uadduser = True
         locktype = "invites"
     elif input_str == "pin":
         if cpin:
             return await event.edit("`Tidak dapat menyematkan pesan di grup ini.`",
-            )
+                                    )
         if ucpin:
             return await event.edit("`Orang ini tidak dapat menyematkan pesan di grup ini.`",
-            )
+                                    )
         ucpin = True
         locktype = "pins"
     elif input_str == "info":
         if changeinfo:
             return await event.edit("`Tidak dapat mengganti info grup ini.`",
-            )
+                                    )
         if uchangeinfo:
             return await event.edit("`Orang ini tidak dapat mengganti info grup ini.`",
-            )
+                                    )
         uchangeinfo = True
         locktype = "chat info"
     elif input_str == "all":
@@ -171,7 +171,7 @@ async def _(event):
     else:
         if input_str:
             return await event.edit(f"`Invalid lock type :` `{input_str}`", time=5
-            )
+                                    )
 
         return await edit_or_reply(event, "`I can't lock nothing !!`")
     try:

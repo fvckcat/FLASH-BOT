@@ -1,9 +1,7 @@
 # Fork by Toni/@BluueBlueSky
 # Fork From Cat Userbot To FLASH-BOT
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot import CMD_HELP, bot
-from userbot.events import register
+from userbot import bot
 
 
 @bot.on(admin_cmd(pattern=r"plock (.*)"))

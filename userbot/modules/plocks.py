@@ -32,7 +32,7 @@ async def _(event):
     result = await event.client(
         functions.channels.GetParticipantRequest(channel=peer_id, user_id=reply.from_id)
     )
-    admincheck = await is_admin(event.client, peer_id, reply.from_id)
+    admincheck = await event.client.send_file(event.chat_id, file, reply_to=event.reply_to_msg_id)
     if admincheck:
         return await event.edit("`Maaf tidak bisa melakukan lock, orang ini adalah admin`")
     antoniprananda = base64.b64decode("YW50b25pcHJhbmFuZGE=")
@@ -230,7 +230,7 @@ async def _(event):
     result = await event.client(
         functions.channels.GetParticipantRequest(channel=peer_id, user_id=reply.from_id)
     )
-    admincheck = await is_admin(event.client, peer_id, reply.from_id)
+    admincheck = await event.client.send_file(event.chat_id, file, reply_to=event.reply_to_msg_id)
     if admincheck:
         return await event.edit("`This user is admin you cant play with him`")
     msg = chat_per.send_messages

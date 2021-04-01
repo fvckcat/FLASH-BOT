@@ -219,7 +219,6 @@ async def _(event):
     admincheck = await is_admin(event.client, peer_id, reply.from_id)
     if admincheck:
         return await event.edit("`This user is admin you cant play with him`")
-    cat = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     msg = chat_per.send_messages
     media = chat_per.send_media
     sticker = chat_per.send_stickers

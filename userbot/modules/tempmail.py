@@ -7,7 +7,7 @@ from userbot.events import register
 # piki
 
 
-@register(outgoing=True, pattern="^.tempmail ?(.*)")
+@register(outgoing=True, pattern=r"^.tempmail ?(.*)")
 async def demn(event):
     chat = "@TempMailBot"
     await event.edit("Sedang Memprosess...")

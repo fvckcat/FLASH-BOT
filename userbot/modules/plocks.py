@@ -4,9 +4,9 @@
 
 import base64
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
-from telethon.tl.types import ChatBannedRights
+from telethon.tl.types import ChatBannedRights, PeerChat
 
-from userbot import CMD_HELP
+from userbot import BOTLOG, BOTLOG_CHAT_ID, CMD_HELP
 from userbot.events import register
 
 

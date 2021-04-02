@@ -6,7 +6,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 import asyncio
 
 
-@register(outgoing=True, pattern=r"^.tempmail ?(.*)")
+@register(outgoing=True, pattern="^.tempmail ?(.*)")
 async def demn(event):
     chat = "@TempMailBot"
     await event.edit("Sedang Memprosess...")

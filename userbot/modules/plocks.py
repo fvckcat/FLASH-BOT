@@ -33,7 +33,7 @@ async def locks(event):
     gif = chat_per.send_gifs
     gamee = chat_per.send_games
     ainline = chat_per.send_inline
-    embed_link = chat_per.embed_links
+    chat_per.embed_links
     gpoll = chat_per.send_polls
     adduser = chat_per.invite_users
     cpin = chat_per.pin_messages
@@ -45,7 +45,7 @@ async def locks(event):
         ugif = result.participant.banned_rights.send_gifs
         ugamee = result.participant.banned_rights.send_games
         uainline = result.participant.banned_rights.send_inline
-        uembed_link = result.participant.banned_rights.embed_links
+        result.participant.banned_rights.embed_links
         ugpoll = result.participant.banned_rights.send_polls
         uadduser = result.participant.banned_rights.invite_users
         ucpin = result.participant.banned_rights.pin_messages
@@ -57,14 +57,12 @@ async def locks(event):
         ugif = gif
         ugamee = gamee
         uainline = ainline
-        uembed_link = embed_link
         ugpoll = gpoll
         uadduser = adduser
         ucpin = cpin
         uchangeinfo = changeinfo
     if input_str == "msg":
         msg = True
-        what = "Pesan"
         if msg:
             return await event.edit("`Pesan Terkunci di grup ini.`"
                                     )
@@ -73,7 +71,6 @@ async def locks(event):
                                     )
     elif input_str == "media":
         media = True
-        what = "Media"
         if media:
             return await event.edit("`Tidak dapat mengirim media di grup ini.`"
                                     )
@@ -82,17 +79,15 @@ async def locks(event):
                                     )
     elif input_str == "sticker":
         sticker = True
-        what = "Sticker"
         if sticker:
             return await event.edit("`Tidak dapat mengirim sticker di grup ini.`"
                                     )
         if usticker:
             return await event.edit("`Orang ini tidak dapat mengirim sticker di grup ini.`"
                                     )
-   
+
     elif input_str == "gif":
         gif = True
-        what = "GIF"
         if gif:
             return await event.edit("`Tidak dapat mengirim gifs di grup ini.`"
                                     )
@@ -101,7 +96,6 @@ async def locks(event):
                                     )
     elif input_str == "game":
         gamee = True
-        what = "Game"
         if gamee:
             return await event.edit("`Tidak dapat bermain inline game di grup ini.`"
                                     )
@@ -110,7 +104,6 @@ async def locks(event):
                                     )
     elif input_str == "inline":
         ainline = True
-        what = "Inline Bot"
         if ainline:
             return await event.edit("`Tidak dapat menggunakan inline bot di grup ini.`"
                                     )
@@ -119,7 +112,6 @@ async def locks(event):
                                     )
     elif input_str == "poll":
         gpoll = True
-        what = "Poll"
         if gpoll:
             return await event.edit("`Tidak dapat mengirim polling di grup ini.`"
                                     )
@@ -128,7 +120,6 @@ async def locks(event):
                                     )
     elif input_str == "invite":
         adduser = True
-        what = "Invite"
         if adduser:
             return await event.edit("`Tidak dapat menambahkan anggota di grup ini.`"
                                     )
@@ -137,7 +128,6 @@ async def locks(event):
                                     )
     elif input_str == "pin":
         cpin = True
-        what = "Pin"
         if cpin:
             return await event.edit("`Tidak dapat menyematkan pesan di grup ini.`",
                                     )
@@ -146,7 +136,6 @@ async def locks(event):
                                     )
     elif input_str == "info":
         changeinfo = True
-        what = "Info"
         if changeinfo:
             return await event.edit("`Tidak dapat mengganti info grup ini.`",
                                     )
@@ -164,7 +153,6 @@ async def locks(event):
         adduser = True
         cpin = True
         changeinfo = True
-        what = "Semuanya"
     else:
         if not input_str:
             await event.edit("`Mohon Maaf, Apa Yang Harus Saya Kunci?`")

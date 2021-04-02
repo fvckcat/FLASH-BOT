@@ -63,117 +63,108 @@ async def locks(event):
         ucpin = cpin
         uchangeinfo = changeinfo
     if input_str == "msg":
+        msg = True
+        what = "Pesan"
         if msg:
             return await event.edit("`Pesan Terkunci di grup ini.`"
                                     )
         if umsg:
             return await event.edit("`Orang ini tidak dapat mengirim pesan di grup ini.`"
                                     )
-        umsg = True
-        locktype = "messages"
     elif input_str == "media":
+        media = True
+        what = "Media"
         if media:
             return await event.edit("`Tidak dapat mengirim media di grup ini.`"
                                     )
         if umedia:
             return await event.edit("`Orang ini tidak dapat mengirim media di grup ini.`"
                                     )
-        umedia = True
-        locktype = "media"
     elif input_str == "sticker":
+        sticker = True
+        what = "Sticker"
         if sticker:
             return await event.edit("`Tidak dapat mengirim sticker di grup ini.`"
                                     )
         if usticker:
             return await event.edit("`Orang ini tidak dapat mengirim sticker di grup ini.`"
                                     )
-        usticker = True
-        locktype = "stickers"
-    elif input_str == "preview":
-        if embed_link:
-            return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
-                                    )
-        if uembed_link:
-            return await event.edit("`Tidak dapat mengirim preview tautan di grup ini.`"
-                                    )
-        uembed_link = True
-        locktype = "preview links"
+   
     elif input_str == "gif":
+        gif = True
+        what = "GIF"
         if gif:
             return await event.edit("`Tidak dapat mengirim gifs di grup ini.`"
                                     )
         if ugif:
             return await event.edit("`Orang ini tidak dapat mengirim gifs di grup ini.`"
                                     )
-        ugif = True
-        locktype = "GIFs"
     elif input_str == "game":
+        gamee = True
+        what = "Game"
         if gamee:
             return await event.edit("`Tidak dapat bermain inline game di grup ini.`"
                                     )
         if ugamee:
             return await event.edit("`Orang ini tidak dapat bermain inline game di grup ini.`"
                                     )
-        ugamee = True
-        locktype = "games"
     elif input_str == "inline":
+        ainline = True
+        what = "Inline Bot"
         if ainline:
             return await event.edit("`Tidak dapat menggunakan inline bot di grup ini.`"
                                     )
         if uainline:
             return await event.edit("`Orang ini tidak dapat menggunakan inline bot di grup ini.`"
                                     )
-        uainline = True
-        locktype = "inline bots"
     elif input_str == "poll":
+        gpoll = True
+        what = "Poll"
         if gpoll:
             return await event.edit("`Tidak dapat mengirim polling di grup ini.`"
                                     )
         if ugpoll:
             return await event.edit("`Orang ini tidak dapat mengirim polling di grup ini.`"
                                     )
-        ugpoll = True
-        locktype = "polls"
     elif input_str == "invite":
+        adduser = True
+        what = "Invite"
         if adduser:
             return await event.edit("`Tidak dapat menambahkan anggota di grup ini.`"
                                     )
         if uadduser:
             return await event.edit("`Orang ini Tidak dapat menambahkan anggota di grup ini.`"
                                     )
-        uadduser = True
-        locktype = "invites"
     elif input_str == "pin":
+        cpin = True
+        what = "Pin"
         if cpin:
             return await event.edit("`Tidak dapat menyematkan pesan di grup ini.`",
                                     )
         if ucpin:
             return await event.edit("`Orang ini tidak dapat menyematkan pesan di grup ini.`",
                                     )
-        ucpin = True
-        locktype = "pins"
     elif input_str == "info":
+        changeinfo = True
+        what = "Info"
         if changeinfo:
             return await event.edit("`Tidak dapat mengganti info grup ini.`",
                                     )
         if uchangeinfo:
             return await event.edit("`Orang ini tidak dapat mengganti info grup ini.`",
                                     )
-        uchangeinfo = True
-        locktype = "chat info"
     elif input_str == "all":
-        umsg = True
-        umedia = True
-        usticker = True
-        ugif = True
-        ugamee = True
-        uainline = True
-        uembed_link = True
-        ugpoll = True
-        uadduser = True
-        ucpin = True
-        uchangeinfo = True
-        locktype = "everything"
+        msg = True
+        media = True
+        sticker = True
+        gif = True
+        gamee = True
+        ainline = True
+        gpoll = True
+        adduser = True
+        cpin = True
+        changeinfo = True
+        what = "Semuanya"
     else:
         if not input_str:
             await event.edit("`Mohon Maaf, Apa Yang Harus Saya Kunci?`")

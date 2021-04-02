@@ -1,9 +1,10 @@
 # pikiiii ganteng
 
-from userbot import CMD_HELP, bot
-from userbot.events import register
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-import asyncio
+from userbot import bot, CMD_HELP
+from userbot.events import register
+
+# piki
 
 
 @register(outgoing=True, pattern="^.tempmail ?(.*)")
@@ -12,7 +13,7 @@ async def demn(event):
     await event.edit("Sedang Memprosess...")
     async with bot.conversation(chat) as conv:
         try:
-            response = conv.wait_event(events.NewMessage(
+            response = conv.await_event(events.NewMessage(
                 incoming=True,
                 from_users=220112646
             )

@@ -1,5 +1,4 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot import CMD_HELP, bot
 from userbot.events import register
 
 
@@ -24,7 +23,6 @@ async def _(event):
             await msg.edit("Boss! Please Unblock @TempMailBot ")
             return
         await eor(ult, f"TEMPMAIL ~ `{response.message.message}`\n\n[CLICK TO VIEW INBOX]({link})")
-
 
 
 HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=HNDLR)}"})

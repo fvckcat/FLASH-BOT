@@ -28,7 +28,7 @@ from userbot import CMD_HELP
 
 @register(outgoing=True, pattern=r"^\.songs (.*)")
 async def download_video(event):
-    await event.edit("Searching...")
+    await event.edit("Mencari Lagu...")
     url = event.pattern_match.group(1)
     if not url:
         return await event.edit("**Error**\nUsage - `.songs <song name>`")
@@ -112,7 +112,7 @@ Pencipta - {}
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"❍ Judul - {rip_data['title']}\n❍ Pencipta - {rip_data['uploader']}\n",
+        caption=f"⚡ Judul - {rip_data['title']}\n⚡ Pencipta - {rip_data['uploader']}\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),

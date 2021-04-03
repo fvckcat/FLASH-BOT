@@ -112,7 +112,7 @@ Pencipta - {}
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"⚡ Judul - {rip_data['title']}\n⚡ Pencipta - {rip_data['uploader']}\n",
+        caption=f"**Judul lagu :** {rip_data['title']}\n**Pencipta    :** {rip_data['uploader']}\n─┈────────────────┈─\n**Channel     :** @CandaAnda",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),

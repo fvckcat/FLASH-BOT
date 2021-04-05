@@ -109,7 +109,7 @@ By - {}
         rip_data["title"], rip_data["uploader"]
     )
     await event.edit(f"`{upteload}`")
-    CAPT = f"⫸ Song - {rip_data['title']}\n⫸ By - {rip_data['uploader']}\n"
+    CAPT = f"**Judul lagu :** {rip_data['title']}\n**Pencipta    :** {rip_data['uploader']}\n─┈────────────────┈─\n**Channel     :** @CandaAnda"
     await event.client.send_file(
         event.chat_id,
         f"{rip_data['id']}.mp3",

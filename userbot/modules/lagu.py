@@ -156,7 +156,7 @@ async def original(event):
 
 CMD_HELP.update(
     {
-        "song": ">`.song <Judul Lagu>`"
+        "lagu": ">`.song <Judul Lagu>`"
         "\nUsage: Mendownload Music"
         ">`.lirik` <Judul Lagu>`"
         "\nUsage: `mendapatkan lirik lagu`"

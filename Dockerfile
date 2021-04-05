@@ -1,8 +1,8 @@
-# We're using Ubuntu 20.10
-FROM liualvinas24/lord-docker:Lord
+# LORD USERBOT
+FROM koala21/kampangbot:buster
 
 #
-# Clone repo and prepare working directory
+# LORD
 #
 RUN git clone -b FLASH-BOT https://github.com/fvckcat/FLASH-BOT /root/userbot
 RUN mkdir /root/userbot/.bin

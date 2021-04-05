@@ -27,7 +27,6 @@ heroku3>=3.4.0
 httplib2>=0.18.0
 humanize 
 lxml
-lyrics_extractor
 oauth2client
 Pillow>=6.0.0
 fontTools
@@ -43,7 +42,7 @@ qrcode
 requests>=2.18.4
 search-engine-parser>=0.6.1
 speedtest-cli>=2.0.2
-sqlalchemy>=1.2
+sqlalchemy<=1.3.23
 telethon>=1.14.0 
 telethon-session-sqlalchemy>=0.2.6
 urbandict>=0.5
@@ -95,3 +94,4 @@ opencv-python
 youtube-dl>=2021.1.8
 youtube-search-python>=1.3.2
 youtube-search>=1.1.1
+pendulum

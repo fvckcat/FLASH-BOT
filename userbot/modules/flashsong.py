@@ -102,7 +102,7 @@ async def download_video(event):
     else:
         thumb = None
     upteload = """
-Uploading...
+Dikit lagi selesai download...
 Song name - {}
 By - {}
 """.format(

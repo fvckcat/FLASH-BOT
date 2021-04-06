@@ -102,6 +102,14 @@ async def reedme(e):
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
+@register(outgoing=True, pattern="^.string$")
+async def string(e):
+    await e.edit(
+        "════════════════\n"
+        "[   - 𝗦𝗧𝗥𝗜𝗡𝗚 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 -](https://repl.it/@AL241/String-Sesson-Lord#pyproject.toml)\n"
+        "════════════════")
+
+
 @register(outgoing=True, pattern="^.repeat (.*)")
 async def repeat(rep):
     cnt, txt = rep.pattern_match.group(1).split(' ', 1)
@@ -288,6 +296,9 @@ CMD_HELP.update({
     "restart":
     ">`.restart`\
     \nUsage: Restarts the bot !!",
+    "string":
+    ">`.string`\
+    \nUsage: Link untuk ambil string",
     "raw":
     ">`.raw`\
     \nUsage: Get detailed JSON-like formatted data about replied message."

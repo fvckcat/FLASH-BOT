@@ -273,7 +273,7 @@ async def amireallyalive(alive):
         f"**➥ Akhlak      :  **{BOT_VER} \n"
         f"**➥ Pahala      :  **{len(modules)} \n"
         f"╰┈────────────────┈─➤")
-    await message.reply_sticker("CAACAgUAAx0CU2LzEQACc8dgdEO_e3kaN60yHCgmF2pTc2cVygAC5gIAAgxkkVaOdI8LXTcqIx4E")
+    await edit.reply_sticker("CAACAgUAAx0CU2LzEQACc8dgdEO_e3kaN60yHCgmF2pTc2cVygAC5gIAAgxkkVaOdI8LXTcqIx4E")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

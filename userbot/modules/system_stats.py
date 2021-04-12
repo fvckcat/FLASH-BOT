@@ -13,7 +13,6 @@ import sys
 import time
 from datetime import datetime
 import psutil
-import Message
 
 from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, FLASH_TEKS_KUSTOM, CMD_HELP, StartTime, bot
 from userbot.events import register

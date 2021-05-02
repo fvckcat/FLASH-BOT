@@ -1,5 +1,5 @@
 # LORD USERBOT
-FROM koala21/kampangbot:buster
+FROM xluxz/geezproject:buster
 
 #
 # LORD

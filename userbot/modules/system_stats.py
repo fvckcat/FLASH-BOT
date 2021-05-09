@@ -273,7 +273,7 @@ async def amireallyalive(alive):
         f"**➥ Akhlak      :  **{BOT_VER} \n"
         f"**➥ Pahala      :  **{len(modules)} \n"
         f"╰┈────────────────┈─➤")
-    
+
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

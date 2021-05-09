@@ -265,7 +265,7 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     output = (
         f"╭┈──────────────────┈╮ \n"
-        f"**      ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗟 𝗢 𝗥 𝗗 💢  **\n"
+        f"**      ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗠 𝗔 𝗫 𝗜 💢  **\n"
         f"╭┈──────────────────┈╯ \n"
         f"**➥ Owner       :  **[Toni](t.me/bluuebluesky)\n"
         f"**➥ Attitude    :  **Ver {version.__version__} \n"
@@ -273,7 +273,7 @@ async def amireallyalive(alive):
         f"**➥ Akhlak      :  **{BOT_VER} \n"
         f"**➥ Pahala      :  **{len(modules)} \n"
         f"╰┈────────────────┈─➤")
-    await edit.reply_sticker("CAACAgUAAx0CU2LzEQACc8dgdEO_e3kaN60yHCgmF2pTc2cVygAC5gIAAgxkkVaOdI8LXTcqIx4E")
+    
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

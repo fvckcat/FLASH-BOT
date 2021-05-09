@@ -1,4 +1,3 @@
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5501763.gif" width="473" height="82" alt="FLASH-BOT" /></a>
 
 
 <p align="center">
@@ -18,7 +17,7 @@
 <p align="center">&nbsp;</p>
 
 ### Repo FLASH-BOT
-Repo Yang Dibuat [Toni](https://t.me/BluueBlueSky) Dan [Alvin](https://t.me/liualvinas) Dari Berbagai Repo Userbot Github 
+Repo Yang Dibuat [Toni](https://t.me/BluueBlueSky) Dari Berbagai Repo Userbot Github 
 
 
 ### CARA MENDAPATKAN STRING SESSON
@@ -40,7 +39,7 @@ Caranya Pergi Ke Grup Support FLASH-BOT Lalu Ketik #String [TEKAN DISINI](https:
 
   > Terakhir Hidupkan Dyno Lalu Check Logs (settings -> view logs) Jika Berhasil Enjoy :)
 ```
-Atau Bisa Gabung Ke Grup Flash Userbot -> [TEKAN DISINI](https://t.me/LordUserbot_Group)
+Atau Bisa Gabung Ke Grup Flash Userbot -> [TEKAN DISINI](https://t.me/vcgsupportgroup)
 ## <p align="center">DEPLOY FLASH-USERBOT</p>
 
 
@@ -48,21 +47,3 @@ Atau Bisa Gabung Ke Grup Flash Userbot -> [TEKAN DISINI](https://t.me/LordUserbo
 
 <br>
 </p>
-
-## Credit
-TERIMAKASIH UNTUK
-
-*   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
-*   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
-*   [Mr.Miss](https://github.com/keselekpermen69) - UserButt
-*   [adekmaulana](https://github.com/adekmaulana) - ProjectBish
-*   [MoveAngel](https://github.com/MoveAngel) - One4uBot
-*   [AidilAryanto](https://github.com/aidilaryanto) - ProjectDils 
-*   [Alfianandaa](https://github.com/alfianandaa/ProjectAlf) - ProjectAlf
-*   [AnggaR69s](https://github.com/GengKapak/DCLXVI) - DCLXVI
-*   [kandnub](https://github.com/kandnub) - TG-UserBot
-*   [༺αиυвιѕ༻](https://github.com/Dark-Princ3) - X-tra-Telegram
-*   [Sahyam2019](https://github.com/sahyam2019/oub-remix) - oub-remix
-*   [TeamUserge](https://github.com/UsergeTeam/Userge) - Userge
-*   DAN BANYAK LAGI 

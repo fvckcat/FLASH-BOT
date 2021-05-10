@@ -9,7 +9,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot import bot, CMD_HELP
 from userbot.events import register
 
-# Alvin Gans
+# Lebah Ganteng
 
 
 @register(outgoing=True, pattern="^.tiktok(?: |$)(.*)")

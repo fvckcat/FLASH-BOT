@@ -1,5 +1,4 @@
 # by:koala @mixiologist
-# Lord Userbot
 
 from telethon.events import ChatAction
 from userbot import ALIVE_NAME, CMD_HELP, bot
@@ -47,7 +46,7 @@ async def get_user_from_id(user, event):
         await event.edit(str(err))
         return None
     return user_obj
-# Ported For Lord-Userbot by liualvinas/Alvin
+
 
 
 @bot.on(ChatAction)

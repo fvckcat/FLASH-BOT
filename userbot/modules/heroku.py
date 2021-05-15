@@ -124,7 +124,7 @@ async def set_var(var):
 """
 
 
-@register(outgoing=True, pattern=r"^.usage(?: |$)")
+@register(outgoing=True, pattern=r"^Usage(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage

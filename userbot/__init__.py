@@ -345,7 +345,7 @@ ZALG_LIST = {}
 
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
-    number_of_cols = 4
+    number_of_cols = 2
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
@@ -365,10 +365,10 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "❮❮", data="{}_prev({})".format(prefix, modulo_page)
+                    "<", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "❯❯", data="{}_next({})".format(prefix, modulo_page)
+                    ">", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -390,9 +390,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Bee-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/fvckcat/Lord-Userbot.git)")
+                await event.reply("Flash-Bot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/fvckcat/flash-bot.git)")
             else:
-                await event.reply(f"`Hai Bee, {ALIVE_NAME}\n\nApa Kabarmu?`")
+                await event.reply(f"`Hai, {ALIVE_NAME}\n\nApa Kabarmu?`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -403,8 +403,8 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n**⚡ 𝙈𝙊𝘿𝙐𝙇 :** `{}`\n**⚡ 𝙁𝙐𝙉𝙂𝙎𝙄 :** \n".format(
-                        "**⚡ 𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏**",
+                    text="{}\n**Jumlah Modul :** `{}`\n**Fungsi Modul :** \n".format(
+                        "**Flash Userbot**",
                         len(dugmeler),
                     ),
                     buttons=buttons,

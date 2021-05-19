@@ -262,7 +262,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("⚡𝙎𝙄𝙎𝙏𝙀𝙈 𝙈𝙀𝙉𝙔𝘼𝙇𝘼")
-    await alive.edit("⚡")
+    await alive.edit("✨")
     output = (
         f"╭┈──────────────────┈╮ \n"
         f"**      ⚡️ 𝗙 𝗟 𝗔 𝗦 𝗛 - 𝗠 𝗔 𝗫 𝗜 💢  **\n"

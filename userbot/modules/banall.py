@@ -12,7 +12,8 @@ async def testing(event):
     nikal = await event.get_chat()
     chutiya = await event.client.get_me()
     admin = nikal.admin_rights
-    if not admin:
+    creator = nikal.creator
+    if not admin and not creator:
         await event.edit("Anda Tidak Mempunyai Hak")
         return
     await event.edit("Tidak Melakukan Apa-apa")

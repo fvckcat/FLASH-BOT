@@ -119,7 +119,7 @@ async def pingme(pong):
     await pong.edit(" ⚡⚡𝙇𝘼𝙎𝙃-𝘽𝙊𝙏")
     await pong.edit(" ⚡𝙁𝙇𝘼𝙎𝙃-𝘽𝙊𝙏")
     await pong.edit("🤟")
-    await asyncio.sleep(4)
+    await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"⚡𝙁𝙇𝘼𝙎𝙃 𝙋𝙄𝙉𝙂 \n"

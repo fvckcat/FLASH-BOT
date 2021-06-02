@@ -82,3 +82,9 @@ CMD_HELP.update(
         "\n• : Fake typing ini Berfungsi dalam group"
     }
 )
+
+
+CMD_HELP.update(
+    {
+        "fakeaction": ">`.ftyping` : `.faudio` : `.fvideo` : `.fgame` <durasi waktu dalam satuan detik>"
+        "\nUsage: Untuk melakukan hal-hal palsu."})
